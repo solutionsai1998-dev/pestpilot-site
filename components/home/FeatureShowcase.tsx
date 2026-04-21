@@ -1,7 +1,7 @@
 "use client";
 
 import clsx from "clsx";
-import { Building2, Check, MapPinned, Users } from "lucide-react";
+import { Building2, Check, MapPinned, Sparkles, Users } from "lucide-react";
 import { useState } from "react";
 
 const tabs = [
@@ -20,6 +20,7 @@ const tabs = [
       "Automated invoicing and payment collection",
       "Chemical inventory tracking and EPA compliance reports"
     ],
+    comingSoonIndices: [],
     dashboardTitle: "Dispatch Board",
     cards: [
       { label: "Open schedule gaps", value: "3" },
@@ -42,6 +43,7 @@ const tabs = [
       "Capture signatures and site photos on completion",
       "Offline mode for crawl spaces, attics, and remote properties"
     ],
+    comingSoonIndices: [],
     dashboardTitle: "Tech Day View",
     cards: [
       { label: "Stops completed", value: "8/11" },
@@ -64,6 +66,7 @@ const tabs = [
       "Digital service reports with treatment details",
       "One-click payments from invoice and reminder links"
     ],
+    comingSoonIndices: [0],
     dashboardTitle: "Customer Portal",
     cards: [
       { label: "Bookings this week", value: "19" },
@@ -150,12 +153,18 @@ export function FeatureShowcase() {
             </p>
 
             <ul className="mt-6 space-y-4">
-              {activePanel.features.map((feature) => (
+              {activePanel.features.map((feature, idx) => (
                 <li className="flex items-start gap-3" key={feature}>
                   <span className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-success/15 text-success">
                     <Check className="h-4 w-4" />
                   </span>
                   <span className="text-base text-text">{feature}</span>
+                  {(activePanel.comingSoonIndices as readonly number[]).includes(idx) && (
+                    <span className="mt-0.5 inline-flex items-center gap-1 rounded-full bg-accent/10 px-2.5 py-0.5 text-xs font-semibold text-accent">
+                      <Sparkles className="h-3 w-3" />
+                      Coming soon
+                    </span>
+                  )}
                 </li>
               ))}
             </ul>
