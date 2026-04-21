@@ -14,7 +14,7 @@ export function VideoModal({
   isOpen,
   onClose,
   title = "PestPilot Demo",
-  videoUrl = "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  videoUrl = ""
 }: VideoModalProps) {
   const titleId = useId();
 
@@ -62,14 +62,22 @@ export function VideoModal({
             <X className="h-5 w-5" />
           </button>
         </div>
-        <div className="aspect-video w-full bg-black">
-          <iframe
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="h-full w-full"
-            src={videoUrl}
-            title={title}
-          />
+        <div className="aspect-video w-full flex items-center justify-center bg-gradient-to-br from-primary to-primary-light text-white">
+          {videoUrl ? (
+            <iframe
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="h-full w-full"
+              src={videoUrl}
+              title={title}
+            />
+          ) : (
+            <div className="text-center px-8">
+              <p className="text-2xl font-bold">Demo Coming Soon</p>
+              <p className="mt-2 text-white/70">We&#39;re putting the finishing touches on PestPilot.</p>
+              <p className="text-white/70">In the meantime, <a href="/demo" className="underline text-accent hover:text-accent/80">book a walkthrough</a> and we&#39;ll show you around.</p>
+            </div>
+          )}
         </div>
       </div>
     </div>
