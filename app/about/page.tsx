@@ -96,7 +96,7 @@ export default function AboutPage() {
               <div className="mt-6 space-y-5 text-body-mobile text-text-light md:text-body">
                 <p>
                   We saw pest control operators using Housecall Pro, GorillaDesk, and Jobber, tools
-                  built for plumbers and cleaning companies. They worked okay, but they weren't
+                  built for plumbers and cleaning companies. They worked okay, but they weren&apos;t
                   built for how pest control actually runs.
                 </p>
                 <p>

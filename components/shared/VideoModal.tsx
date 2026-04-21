@@ -1,7 +1,7 @@
 "use client";
 
 import { X } from "lucide-react";
-import { useEffect } from "react";
+import { useEffect, useId } from "react";
 
 type VideoModalProps = {
   isOpen: boolean;
@@ -16,6 +16,8 @@ export function VideoModal({
   title = "PestPilot Demo",
   videoUrl = "https://www.youtube.com/embed/dQw4w9WgXcQ"
 }: VideoModalProps) {
+  const titleId = useId();
+
   useEffect(() => {
     if (!isOpen) {
       return;
@@ -37,22 +39,23 @@ export function VideoModal({
 
   return (
     <div
+      aria-labelledby={titleId}
       aria-modal="true"
       className="fixed inset-0 z-50 flex items-center justify-center bg-primary/80 p-4"
       role="dialog"
     >
       <button
         aria-label="Close video modal"
-        className="absolute inset-0 cursor-default"
+        className="absolute inset-0"
         onClick={onClose}
         type="button"
       />
       <div className="relative z-10 w-full max-w-4xl overflow-hidden rounded-card bg-white shadow-lg">
         <div className="flex items-center justify-between border-b border-border px-6 py-4">
-          <h2 className="m-0 text-h3-mobile text-text">{title}</h2>
+          <h2 className="m-0 text-h3-mobile text-text" id={titleId}>{title}</h2>
           <button
             aria-label="Close video modal"
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border text-text transition hover:bg-bg-alt"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border text-text transition hover:bg-bg-alt focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
             onClick={onClose}
             type="button"
           >

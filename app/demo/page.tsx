@@ -145,7 +145,7 @@ export default function DemoPage() {
                 <h2 className="mt-4 text-h3-mobile font-semibold text-primary md:text-h3-desktop">
                   We&apos;ll show you the workflows that matter most.
                 </h2>
-                <ul className="mt-6 space-y-4 text-small text-text-light">
+                <ul className="mt-6 list-disc space-y-4 pl-5 text-small text-text-light">
                   <li>Recurring service scheduling and cycle management</li>
                   <li>Dispatch boards built for dense routes and seasonal volume</li>
                   <li>Chemical logs, invoicing, and compliance from one system</li>

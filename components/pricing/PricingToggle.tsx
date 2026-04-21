@@ -95,23 +95,33 @@ export function PricingToggle() {
   return (
     <>
       <div className="mt-10 flex justify-center">
-        <div className="inline-flex rounded-full border border-border bg-bg-alt p-1 shadow-sm">
+        <div aria-label="Billing frequency" className="inline-flex rounded-full border border-border bg-bg-alt p-1 shadow-sm" role="tablist">
           <button
-            className={`rounded-full px-5 py-2 text-small font-semibold transition ${
+            aria-controls="pricing-panel-monthly"
+            aria-selected={billingCycle === "monthly"}
+            className={`rounded-full px-5 py-2 text-small font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 ${
               billingCycle === "monthly" ? "bg-white text-primary shadow-sm" : "text-text-light"
             }`}
+            id="pricing-tab-monthly"
             onClick={() => setBillingCycle("monthly")}
+            role="tab"
+            tabIndex={billingCycle === "monthly" ? 0 : -1}
             type="button"
           >
             Monthly
           </button>
           <button
-            className={`rounded-full px-5 py-2 text-small font-semibold transition ${
+            aria-controls="pricing-panel-annual"
+            aria-selected={billingCycle === "annual"}
+            className={`rounded-full px-5 py-2 text-small font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 ${
               billingCycle === "annual"
                 ? "bg-primary text-white shadow-sm"
                 : "text-text-light"
             }`}
+            id="pricing-tab-annual"
             onClick={() => setBillingCycle("annual")}
+            role="tab"
+            tabIndex={billingCycle === "annual" ? 0 : -1}
             type="button"
           >
             Annual
@@ -122,7 +132,13 @@ export function PricingToggle() {
         </div>
       </div>
 
-      <div className="mt-10 grid gap-6 xl:grid-cols-3">
+      <div
+        aria-labelledby={billingCycle === "monthly" ? "pricing-tab-monthly" : "pricing-tab-annual"}
+        className="mt-10 grid gap-6 xl:grid-cols-3"
+        id={billingCycle === "monthly" ? "pricing-panel-monthly" : "pricing-panel-annual"}
+        role="tabpanel"
+        tabIndex={0}
+      >
         {plans[billingCycle].map((plan) => (
           <TierCard
             badge={plan.badge}

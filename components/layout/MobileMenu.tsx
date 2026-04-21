@@ -15,7 +15,7 @@ export function MobileMenu() {
         aria-controls="mobile-nav-drawer"
         aria-expanded={isOpen}
         aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
-        className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border text-primary"
+        className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
         onClick={() => setIsOpen((current) => !current)}
         type="button"
       >
@@ -25,21 +25,22 @@ export function MobileMenu() {
         <div className="fixed inset-0 z-40 bg-primary/40">
           <button
             aria-label="Close mobile menu overlay"
-            className="absolute inset-0 cursor-default"
+            className="absolute inset-0"
             onClick={() => setIsOpen(false)}
             type="button"
           />
           <aside
-            className="absolute right-0 top-0 flex h-full w-full max-w-sm flex-col gap-8 bg-white p-6 shadow-lg"
+            aria-label="Mobile navigation"
+            className="absolute right-0 top-0 flex h-full w-full max-w-sm flex-col gap-8 overflow-y-auto bg-white p-6 shadow-lg"
             id="mobile-nav-drawer"
           >
             <div className="flex items-center justify-between">
-              <Link className="text-xl font-extrabold text-primary" href="/" onClick={() => setIsOpen(false)}>
+              <Link className="rounded-md text-xl font-extrabold text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2" href="/" onClick={() => setIsOpen(false)}>
                 PestPilot
               </Link>
               <button
                 aria-label="Close navigation menu"
-                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border text-primary"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
                 onClick={() => setIsOpen(false)}
                 type="button"
               >
@@ -49,7 +50,7 @@ export function MobileMenu() {
             <nav aria-label="Mobile" className="flex flex-col gap-5">
               {navLinks.map((link) => (
                 <Link
-                  className="text-lg font-semibold text-text"
+                  className="rounded-md text-lg font-semibold text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
                   href={link.href}
                   key={link.href}
                   onClick={() => setIsOpen(false)}

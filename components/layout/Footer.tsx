@@ -13,7 +13,7 @@ export function Footer() {
     <footer className="border-t border-border bg-bg-alt">
       <div className="container grid gap-10 py-12 md:grid-cols-[1.5fr_1fr_1fr]">
         <div className="space-y-4">
-          <Link className="text-2xl font-extrabold tracking-tight text-primary" href="/">
+          <Link className="rounded-md text-2xl font-extrabold tracking-tight text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2" href="/">
             PestPilot
           </Link>
           <p className="max-w-md text-small text-text-light">
@@ -35,7 +35,7 @@ export function Footer() {
             <h2 className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-text-light">Legal</h2>
             <div className="flex flex-col gap-3">
               {legalLinks.map((link) => (
-                <Link className="text-sm text-text hover:text-primary-light" href={link.href} key={link.href}>
+                <Link className="rounded-md text-sm text-text hover:text-primary-light focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2" href={link.href} key={link.href}>
                   {link.label}
                 </Link>
               ))}
@@ -47,7 +47,7 @@ export function Footer() {
               {socialIcons.map(({ href, icon: Icon, label }) => (
                 <Link
                   aria-label={label}
-                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-white text-primary transition hover:border-primary hover:bg-primary hover:text-white"
+                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-white text-primary transition hover:border-primary hover:bg-primary hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
                   href={href}
                   key={label}
                 >

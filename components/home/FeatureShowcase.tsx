@@ -98,7 +98,7 @@ export function FeatureShowcase() {
         </div>
 
         <div className="mt-10 border-b border-border">
-          <div className="flex flex-col gap-2 md:flex-row md:gap-8">
+          <div className="flex flex-col gap-2 md:flex-row md:gap-8" role="tablist" aria-label="Feature showcase sections">
             {tabs.map((tab) => {
               const Icon = tab.icon;
               const isActive = tab.id === activeTab;
@@ -108,7 +108,7 @@ export function FeatureShowcase() {
                   aria-controls={`feature-panel-${tab.id}`}
                   aria-selected={isActive}
                   className={clsx(
-                    "group relative inline-flex items-center gap-3 border-b-2 px-1 py-4 text-left transition",
+                    "group relative inline-flex items-center gap-3 border-b-2 px-1 py-4 text-left transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2",
                     isActive
                       ? "border-accent text-primary"
                       : "border-transparent text-text-light hover:text-primary"
@@ -116,7 +116,31 @@ export function FeatureShowcase() {
                   id={`feature-tab-${tab.id}`}
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
+                  onKeyDown={(event) => {
+                    if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+                      event.preventDefault();
+                      const currentIndex = tabs.findIndex((item) => item.id === tab.id);
+                      setActiveTab(tabs[(currentIndex + 1) % tabs.length].id);
+                    }
+
+                    if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
+                      event.preventDefault();
+                      const currentIndex = tabs.findIndex((item) => item.id === tab.id);
+                      setActiveTab(tabs[(currentIndex - 1 + tabs.length) % tabs.length].id);
+                    }
+
+                    if (event.key === "Home") {
+                      event.preventDefault();
+                      setActiveTab(tabs[0].id);
+                    }
+
+                    if (event.key === "End") {
+                      event.preventDefault();
+                      setActiveTab(tabs[tabs.length - 1].id);
+                    }
+                  }}
                   role="tab"
+                  tabIndex={isActive ? 0 : -1}
                   type="button"
                 >
                   <span
@@ -139,6 +163,7 @@ export function FeatureShowcase() {
           className="mt-10 grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:items-center"
           id={`feature-panel-${activePanel.id}`}
           role="tabpanel"
+          tabIndex={0}
         >
           <div>
             <div className="inline-flex items-center gap-2 rounded-full bg-primary/8 px-4 py-2 text-small font-semibold text-primary">
