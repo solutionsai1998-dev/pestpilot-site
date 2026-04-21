@@ -7,7 +7,23 @@ import { Card } from "@/components/shared/Card";
 export const metadata: Metadata = {
   title: "Book a Demo | PestPilot",
   description:
-    "Book a PestPilot demo and see how scheduling, dispatch, invoicing, and compliance workflows work for pest control companies."
+    "Book a PestPilot demo and see how scheduling, dispatch, invoicing, and compliance workflows work for pest control companies.",
+  alternates: {
+    canonical: "https://pestpilot.com/demo"
+  },
+  openGraph: {
+    title: "Book a Demo | PestPilot",
+    description:
+      "Book a PestPilot demo and see how scheduling, dispatch, invoicing, and compliance workflows work for pest control companies.",
+    url: "https://pestpilot.com/demo",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Book a Demo | PestPilot",
+    description:
+      "Book a PestPilot demo and see how scheduling, dispatch, invoicing, and compliance workflows work for pest control companies."
+  }
 };
 
 const trustPoints = [

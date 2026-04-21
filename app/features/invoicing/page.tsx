@@ -7,7 +7,23 @@ import { Card } from "@/components/shared/Card";
 export const metadata: Metadata = {
   title: "Pest Control Invoicing Software | PestPilot",
   description:
-    "Generate invoices on completion, collect field payments, and automate recurring billing with PestPilot."
+    "Generate invoices on completion, collect field payments, and automate recurring billing with PestPilot.",
+  alternates: {
+    canonical: "https://pestpilot.com/features/invoicing"
+  },
+  openGraph: {
+    title: "Pest Control Invoicing Software | PestPilot",
+    description:
+      "Generate invoices on completion, collect field payments, and automate recurring billing with PestPilot.",
+    url: "https://pestpilot.com/features/invoicing",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pest Control Invoicing Software | PestPilot",
+    description:
+      "Generate invoices on completion, collect field payments, and automate recurring billing with PestPilot."
+  }
 };
 
 const features = [

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { BlogPostSchema } from "@/components/seo/BlogPostSchema";
 import { Badge } from "@/components/shared/Badge";
 import { Button } from "@/components/shared/Button";
 import { Card } from "@/components/shared/Card";
@@ -8,7 +9,23 @@ import { Card } from "@/components/shared/Card";
 export const metadata: Metadata = {
   title: "How to Set Up Recurring Service Cycles Without Losing Track | PestPilot",
   description:
-    "A practical look at building recurring service cycles that stay organized as your pest control business grows."
+    "A practical look at building recurring service cycles that stay organized as your pest control business grows.",
+  alternates: {
+    canonical: "https://pestpilot.com/blog/recurring-service-cycles"
+  },
+  openGraph: {
+    title: "How to Set Up Recurring Service Cycles Without Losing Track | PestPilot",
+    description:
+      "A practical look at building recurring service cycles that stay organized as your pest control business grows.",
+    url: "https://pestpilot.com/blog/recurring-service-cycles",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How to Set Up Recurring Service Cycles Without Losing Track | PestPilot",
+    description:
+      "A practical look at building recurring service cycles that stay organized as your pest control business grows."
+  }
 };
 
 export function generateStaticParams() {
@@ -36,6 +53,13 @@ const relatedArticles = [
 export default function BlogPostPage() {
   return (
     <>
+      <BlogPostSchema
+        author="PestPilot Team"
+        date="2026-04-21"
+        description="A practical look at building recurring service cycles that stay organized as your pest control business grows."
+        title="How to Set Up Recurring Service Cycles Without Losing Track | PestPilot"
+        url="https://pestpilot.com/blog/recurring-service-cycles"
+      />
       <section className="section-padding bg-bg-alt">
         <div className="container">
           <div className="mx-auto max-w-4xl">

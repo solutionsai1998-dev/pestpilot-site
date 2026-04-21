@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PricingSchema } from "@/components/seo/PricingSchema";
 import { Button } from "@/components/shared/Button";
 import { FeatureMatrix } from "@/components/pricing/FeatureMatrix";
 import { PricingFAQ } from "@/components/pricing/PricingFAQ";
@@ -7,12 +8,29 @@ import { PricingToggle } from "@/components/pricing/PricingToggle";
 export const metadata: Metadata = {
   title: "Pricing | PestPilot",
   description:
-    "Flat-rate pest control software pricing with no per-technician fees, free migration, and built-in compliance workflows."
+    "Flat-rate pest control software pricing with no per-technician fees, free migration, and built-in compliance workflows.",
+  alternates: {
+    canonical: "https://pestpilot.com/pricing"
+  },
+  openGraph: {
+    title: "Pricing | PestPilot",
+    description:
+      "Flat-rate pest control software pricing with no per-technician fees, free migration, and built-in compliance workflows.",
+    url: "https://pestpilot.com/pricing",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pricing | PestPilot",
+    description:
+      "Flat-rate pest control software pricing with no per-technician fees, free migration, and built-in compliance workflows."
+  }
 };
 
 export default function PricingPage() {
   return (
     <>
+      <PricingSchema />
       <section className="section-padding bg-white">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">

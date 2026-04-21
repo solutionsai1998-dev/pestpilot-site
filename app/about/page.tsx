@@ -7,7 +7,23 @@ import { Card } from "@/components/shared/Card";
 export const metadata: Metadata = {
   title: "About PestPilot | Built for Pest Control Operators",
   description:
-    "Learn why PestPilot exists and how we're building software specifically for pest control operators, not generic field service businesses."
+    "Learn why PestPilot exists and how we're building software specifically for pest control operators, not generic field service businesses.",
+  alternates: {
+    canonical: "https://pestpilot.com/about"
+  },
+  openGraph: {
+    title: "About PestPilot | Built for Pest Control Operators",
+    description:
+      "Learn why PestPilot exists and how we're building software specifically for pest control operators, not generic field service businesses.",
+    url: "https://pestpilot.com/about",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About PestPilot | Built for Pest Control Operators",
+    description:
+      "Learn why PestPilot exists and how we're building software specifically for pest control operators, not generic field service businesses."
+  }
 };
 
 const values = [

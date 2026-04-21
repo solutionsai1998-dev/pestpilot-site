@@ -7,7 +7,23 @@ import { Card } from "@/components/shared/Card";
 export const metadata: Metadata = {
   title: "Pest Control Software | PestPilot",
   description:
-    "PestPilot is pest control software built for scheduling, dispatch, invoicing, chemical tracking, and EPA compliance."
+    "PestPilot is pest control software built for scheduling, dispatch, invoicing, chemical tracking, and EPA compliance.",
+  alternates: {
+    canonical: "https://pestpilot.com/pest-control-software"
+  },
+  openGraph: {
+    title: "Pest Control Software | PestPilot",
+    description:
+      "PestPilot is pest control software built for scheduling, dispatch, invoicing, chemical tracking, and EPA compliance.",
+    url: "https://pestpilot.com/pest-control-software",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pest Control Software | PestPilot",
+    description:
+      "PestPilot is pest control software built for scheduling, dispatch, invoicing, chemical tracking, and EPA compliance."
+  }
 };
 
 const highlights = [

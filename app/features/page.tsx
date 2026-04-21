@@ -7,7 +7,23 @@ import { Badge } from "@/components/shared/Badge";
 export const metadata: Metadata = {
   title: "Features | PestPilot",
   description:
-    "Explore PestPilot's scheduling, dispatch, invoicing, reporting, and chemical tracking features for pest control operators."
+    "Explore PestPilot's scheduling, dispatch, invoicing, reporting, and chemical tracking features for pest control operators.",
+  alternates: {
+    canonical: "https://pestpilot.com/features"
+  },
+  openGraph: {
+    title: "Features | PestPilot",
+    description:
+      "Explore PestPilot's scheduling, dispatch, invoicing, reporting, and chemical tracking features for pest control operators.",
+    url: "https://pestpilot.com/features",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Features | PestPilot",
+    description:
+      "Explore PestPilot's scheduling, dispatch, invoicing, reporting, and chemical tracking features for pest control operators."
+  }
 };
 
 const sections = [

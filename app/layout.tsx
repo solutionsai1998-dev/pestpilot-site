@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { HomepageSchema } from "@/components/seo/HomepageSchema";
 import "@/styles/globals.css";
 
 const inter = Inter({
@@ -21,6 +23,9 @@ export const metadata: Metadata = {
   title: "PestPilot — Pest Control Software Built for Your Business",
   description:
     "Scheduling, dispatch, invoicing, and EPA compliance — all in one. Built exclusively for pest control operators.",
+  alternates: {
+    canonical: "https://pestpilot.com"
+  },
   openGraph: {
     title: "PestPilot",
     description:
@@ -28,6 +33,7 @@ export const metadata: Metadata = {
     url: "https://pestpilot.com",
     siteName: "PestPilot",
     type: "website"
+    // Note: public/og-image.png should be optimized to 1200x630 for ideal social sharing.
   },
   twitter: {
     card: "summary_large_image",
@@ -45,6 +51,7 @@ export default function RootLayout({
   return (
     <html className={`${inter.variable} ${jetbrainsMono.variable}`} lang="en">
       <body>
+        <HomepageSchema />
         <a className="skip-link" href="#main-content">
           Skip to content
         </a>
@@ -55,6 +62,7 @@ export default function RootLayout({
           </main>
           <Footer />
         </div>
+        <Analytics />
       </body>
     </html>
   );

@@ -7,7 +7,23 @@ import { Card } from "@/components/shared/Card";
 export const metadata: Metadata = {
   title: "Pest Control Reporting Software | PestPilot",
   description:
-    "Track callbacks, recurring revenue, chemical usage, and technician performance with PestPilot reporting dashboards."
+    "Track callbacks, recurring revenue, chemical usage, and technician performance with PestPilot reporting dashboards.",
+  alternates: {
+    canonical: "https://pestpilot.com/features/reporting"
+  },
+  openGraph: {
+    title: "Pest Control Reporting Software | PestPilot",
+    description:
+      "Track callbacks, recurring revenue, chemical usage, and technician performance with PestPilot reporting dashboards.",
+    url: "https://pestpilot.com/features/reporting",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pest Control Reporting Software | PestPilot",
+    description:
+      "Track callbacks, recurring revenue, chemical usage, and technician performance with PestPilot reporting dashboards."
+  }
 };
 
 const features = [

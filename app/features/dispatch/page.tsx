@@ -7,7 +7,23 @@ import { Card } from "@/components/shared/Card";
 export const metadata: Metadata = {
   title: "Dispatch Software for Pest Control | PestPilot",
   description:
-    "Route jobs by territory, service type, and urgency with dispatch tools built for pest control operators."
+    "Route jobs by territory, service type, and urgency with dispatch tools built for pest control operators.",
+  alternates: {
+    canonical: "https://pestpilot.com/features/dispatch"
+  },
+  openGraph: {
+    title: "Dispatch Software for Pest Control | PestPilot",
+    description:
+      "Route jobs by territory, service type, and urgency with dispatch tools built for pest control operators.",
+    url: "https://pestpilot.com/features/dispatch",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dispatch Software for Pest Control | PestPilot",
+    description:
+      "Route jobs by territory, service type, and urgency with dispatch tools built for pest control operators."
+  }
 };
 
 const features = [

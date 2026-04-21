@@ -7,7 +7,23 @@ import { Card } from "@/components/shared/Card";
 export const metadata: Metadata = {
   title: "Scheduling Software for Pest Control | PestPilot",
   description:
-    "Automate recurring pest cycles, customer reminders, and conflict-free scheduling with PestPilot."
+    "Automate recurring pest cycles, customer reminders, and conflict-free scheduling with PestPilot.",
+  alternates: {
+    canonical: "https://pestpilot.com/features/scheduling"
+  },
+  openGraph: {
+    title: "Scheduling Software for Pest Control | PestPilot",
+    description:
+      "Automate recurring pest cycles, customer reminders, and conflict-free scheduling with PestPilot.",
+    url: "https://pestpilot.com/features/scheduling",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Scheduling Software for Pest Control | PestPilot",
+    description:
+      "Automate recurring pest cycles, customer reminders, and conflict-free scheduling with PestPilot."
+  }
 };
 
 const features = [

@@ -7,7 +7,23 @@ import { Card } from "@/components/shared/Card";
 export const metadata: Metadata = {
   title: "Chemical Tracking Software for Pest Control | PestPilot",
   description:
-    "Track chemical usage, inventory lots, and EPA compliance reporting with software built specifically for pest control."
+    "Track chemical usage, inventory lots, and EPA compliance reporting with software built specifically for pest control.",
+  alternates: {
+    canonical: "https://pestpilot.com/features/chemical-tracking"
+  },
+  openGraph: {
+    title: "Chemical Tracking Software for Pest Control | PestPilot",
+    description:
+      "Track chemical usage, inventory lots, and EPA compliance reporting with software built specifically for pest control.",
+    url: "https://pestpilot.com/features/chemical-tracking",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Chemical Tracking Software for Pest Control | PestPilot",
+    description:
+      "Track chemical usage, inventory lots, and EPA compliance reporting with software built specifically for pest control."
+  }
 };
 
 const features = [

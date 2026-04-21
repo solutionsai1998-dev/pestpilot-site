@@ -8,7 +8,23 @@ import { Card } from "@/components/shared/Card";
 export const metadata: Metadata = {
   title: "Pest Control Blog | PestPilot",
   description:
-    "Read practical pest control operations, compliance, growth, and software guidance from PestPilot."
+    "Read practical pest control operations, compliance, growth, and software guidance from PestPilot.",
+  alternates: {
+    canonical: "https://pestpilot.com/blog"
+  },
+  openGraph: {
+    title: "Pest Control Blog | PestPilot",
+    description:
+      "Read practical pest control operations, compliance, growth, and software guidance from PestPilot.",
+    url: "https://pestpilot.com/blog",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pest Control Blog | PestPilot",
+    description:
+      "Read practical pest control operations, compliance, growth, and software guidance from PestPilot."
+  }
 };
 
 const posts = [
