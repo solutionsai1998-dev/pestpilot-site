@@ -6,7 +6,7 @@ import { Button } from "@/components/shared/Button";
 import { VideoModal } from "@/components/shared/VideoModal";
 
 const heroStats = [
-  { label: "15+ hours saved", detail: "every week in admin time" },
+  { label: "Less admin drag", detail: "with scheduling, billing, and records in one place" },
   { label: "30/60/90-day cycles", detail: "templated and auto-scheduled" },
   { label: "Audit-ready logs", detail: "chemical records stay organized" }
 ];
@@ -28,18 +28,18 @@ export function Hero() {
             <div className="max-w-2xl">
               <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/8 px-4 py-2 text-small font-medium text-white/90 shadow-sm backdrop-blur">
                 <Sparkles className="h-4 w-4 text-accent" />
-                Built exclusively for pest control operators
+                Built for founding pest control operators
               </div>
               <h1 className="mt-6 text-h1-mobile font-extrabold tracking-tight text-white md:text-h1-desktop">
                 Run Your Pest Control Business, Not Your Office.
               </h1>
               <p className="mt-6 max-w-xl text-body-mobile text-white/78 md:text-body">
-                Save 15+ hours a week with scheduling, dispatch, invoicing, chemical tracking, and
-                EPA compliance workflows built for the jobs your team actually runs.
+                Scheduling, dispatch, invoicing, chemical tracking, and EPA compliance workflows for
+                solo operators and small teams that want a sharper system from day one.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-                <Button className="min-w-[12rem]" href="/demo">
-                  Start Free Trial
+                <Button className="min-w-[12rem]" href="/early-access">
+                  Apply for Early Access
                 </Button>
                 <Button
                   className="min-w-[11rem] border-white/20 bg-white/10 text-white hover:border-white hover:bg-white/14"
@@ -51,7 +51,7 @@ export function Hero() {
                 </Button>
               </div>
               <p className="mt-4 text-small text-white/68">
-                No credit card required · Setup in 15 minutes
+                Founding-user rollout support · Setup in 15 minutes
               </p>
 
               <div className="mt-10 grid gap-4 sm:grid-cols-3">
@@ -148,21 +148,21 @@ export function Hero() {
 
                       <div className="rounded-[20px] border border-primary/10 bg-white p-5 shadow-md">
                         <p className="text-small uppercase tracking-[0.18em] text-text-light">
-                          Customer Snapshot
+                          Founding rollout snapshot
                         </p>
                         <p className="mt-1 text-lg font-semibold text-primary">
-                          91% of recurring customers booked ahead
+                          Recurring plans, reminders, and invoicing in one workflow
                         </p>
                         <div className="mt-4 h-3 overflow-hidden rounded-full bg-bg-alt">
-                          <div className="h-full w-[91%] rounded-full bg-[linear-gradient(90deg,#2d6a4f,#f77f00)]" />
+                          <div className="h-full w-[72%] rounded-full bg-[linear-gradient(90deg,#2d6a4f,#f77f00)]" />
                         </div>
                         <div className="mt-4 flex items-center justify-between text-small text-text-light">
-                          <span>Invoices due today</span>
-                          <span className="font-semibold text-text">4</span>
+                          <span>Rollout checklist</span>
+                          <span className="font-semibold text-text">Import → route → launch</span>
                         </div>
                         <div className="mt-2 flex items-center justify-between text-small text-text-light">
-                          <span>Technicians in route</span>
-                          <span className="font-semibold text-text">7</span>
+                          <span>Best fit</span>
+                          <span className="font-semibold text-text">Solo + small crews</span>
                         </div>
                       </div>
                     </div>

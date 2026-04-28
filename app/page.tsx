@@ -22,9 +22,9 @@ export default function HomePage() {
       <ChemicalTracking />
       <RecurringCycles />
       <PaperTransition />
+      <FoundingMembers />
       <Testimonials />
       <PricingPreview />
-      <FoundingMembers />
       <FinalCTA />
     </>
   );

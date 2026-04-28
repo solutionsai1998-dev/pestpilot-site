@@ -12,21 +12,21 @@ export function FinalCTA() {
 
           <div className="relative mx-auto max-w-4xl text-center">
             <h2 className="text-h2-mobile font-bold tracking-tight text-white md:text-h2-desktop">
-              Ready to ditch the paperwork and grow your pest control business?
+              Ready to replace the paperwork with a sharper operating system?
             </h2>
             <p className="mt-4 text-body-mobile text-white/76 md:text-body">
-              Start your trial, bring over your customer list, and get your routes organized without
-              rebuilding your business from scratch.
+              Apply for early access, bring over your customer list, and launch with a pest-control
+              workflow built for recurring routes, compliance, and steady growth.
             </p>
 
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button className="min-w-[15rem]" href="/demo">
-                Start Your Free Trial
+              <Button className="min-w-[15rem]" href="/early-access">
+                Apply for Early Access
               </Button>
             </div>
 
             <p className="mt-4 text-small text-white/68">
-              No credit card required · 14-day free trial · Setup in 15 minutes
+              Founding-user rollout support · Setup in 15 minutes · No payment required to apply
             </p>
 
             <div className="mt-8 flex flex-col items-center justify-center gap-4 text-small font-medium text-white/84 sm:flex-row sm:gap-8">

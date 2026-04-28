@@ -1,6 +1,10 @@
-const logos = ["Field Notes", "RouteSync", "QuickBooks", "Service Maps", "TextPulse"];
+const logos = ["Route-ready workflows", "EPA-friendly records", "Recurring service plans", "Mobile field updates"];
 
-const stats = ["500,000+ treatments tracked", "99.9% uptime", "4.9★ operator rating"];
+const stats = [
+  "Early access for founding operators",
+  "Built for solo operators and small teams",
+  "Direct product feedback with the builder"
+];
 
 export function SocialProofBar() {
   return (
@@ -8,7 +12,7 @@ export function SocialProofBar() {
       <div className="container flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
         <div className="flex flex-col gap-2">
           <p className="text-small font-semibold uppercase tracking-[0.2em] text-primary-light">
-            Trusted by 250+ pest control companies
+            Early access for pest control operators who want a cleaner system
           </p>
           <div className="flex flex-wrap gap-x-5 gap-y-2 text-small text-text-light">
             {stats.map((stat) => (
