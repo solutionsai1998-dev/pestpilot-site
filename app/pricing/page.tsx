@@ -31,6 +31,23 @@ export default function PricingPage() {
   return (
     <>
       <PricingSchema />
+
+      {/* Founding Member Banner */}
+      <div className="border-b border-accent/20 bg-[linear-gradient(90deg,_#fff7ed_0%,_#fffaf2_50%,_#fff7ed_100%)]">
+        <div className="container py-4 text-center">
+          <p className="text-sm font-medium text-text">
+            <span className="mr-1 inline-flex items-center rounded-full bg-accent px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide text-white">
+              Founding Deal
+            </span>{" "}
+            Solo operators pay{" "}
+            <span className="font-bold text-accent">$49/mo</span> (normally $99/mo) — locked for life.{" "}
+            <a className="font-semibold text-primary underline underline-offset-2 transition hover:text-primary-light" href="/early-access">
+              Claim your spot →
+            </a>
+          </p>
+        </div>
+      </div>
+
       <section className="section-padding bg-white">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">

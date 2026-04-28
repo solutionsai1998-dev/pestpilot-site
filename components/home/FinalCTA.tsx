@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, PhoneCall } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/shared/Button";
 
 export function FinalCTA() {
@@ -36,10 +36,9 @@ export function FinalCTA() {
               </Link>
               <a
                 className="inline-flex items-center gap-2 transition hover:text-white"
-                href="tel:+1-555-000-0000"
+                href="mailto:hello@pestpilot.io"
               >
-                <PhoneCall className="h-4 w-4" />
-                Call us: (555) 000-0000
+                hello@pestpilot.io
               </a>
             </div>
           </div>

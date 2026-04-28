@@ -2,77 +2,77 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Service | PestPilot",
-  description: "Placeholder Terms of Service for PestPilot."
+  description: "Terms of Service for PestPilot pest control software."
 };
 
 const sections = [
   {
     title: "Acceptance of Terms",
     paragraphs: [
-      "These Terms of Service are placeholder legal content for [Company Name] and are provided for design and product development purposes only. By accessing or using the PestPilot platform, you agree to be bound by the then-current version of these Terms and any policies incorporated by reference.",
+      "By accessing or using the PestPilot platform, you agree to be bound by these Terms of Service and any policies incorporated by reference. These terms apply to all visitors, users, and others who access or use the Service.",
       "If you are using the Service on behalf of a company, you represent that you have authority to bind that entity to these Terms. If you do not agree, do not access or use the Service."
     ]
   },
   {
     title: "Description of Service",
     paragraphs: [
-      "PestPilot is a software platform intended to support pest control businesses with scheduling, dispatch, invoicing, reporting, compliance documentation, and related workflows. This section is placeholder language and should be reviewed by legal counsel before publication.",
-      "[Company Name] may modify, improve, suspend, or discontinue portions of the Service from time to time. We will use reasonable efforts to communicate material changes where appropriate."
+      "PestPilot is a software platform intended to support pest control businesses with scheduling, dispatch, invoicing, reporting, compliance documentation, and related workflows.",
+      "PestPilot may modify, improve, suspend, or discontinue portions of the Service from time to time. We will use reasonable efforts to communicate material changes where appropriate."
     ]
   },
   {
     title: "User Accounts",
     paragraphs: [
       "You are responsible for maintaining the confidentiality of your account credentials and for all activity that occurs under your account. You agree to provide accurate information and to keep that information current.",
-      "You must promptly notify [Company Name] at [Contact Email] if you believe your account has been compromised or used without authorization."
+      "You must promptly notify PestPilot at hello@pestpilot.io if you believe your account has been compromised or used without authorization."
     ]
   },
   {
     title: "Acceptable Use",
     paragraphs: [
-      "You may not use the Service in a manner that violates applicable law, infringes the rights of others, attempts unauthorized access, interferes with platform operations, or introduces malicious code. Placeholder language should be tailored to the final product scope and jurisdiction.",
+      "You may not use the Service in a manner that violates applicable law, infringes the rights of others, attempts unauthorized access, interferes with platform operations, or introduces malicious code.",
       "We reserve the right to investigate misuse and to suspend or terminate accounts that, in our reasonable judgment, create risk for the Service, other users, or third parties."
     ]
   },
   {
     title: "Billing and Payments",
     paragraphs: [
-      "If the Service is offered on a paid basis, you agree to pay all fees described in your order form, subscription plan, or other commercial agreement with [Company Name]. Unless otherwise stated, fees are non-refundable except where required by law.",
-      "[Company Name] may change pricing, introduce new fees, or update billing terms with advance notice. Taxes, duties, and government charges are your responsibility unless explicitly included."
+      "If the Service is offered on a paid basis, you agree to pay all fees described in your order form, subscription plan, or other commercial agreement with PestPilot. Unless otherwise stated, fees are non-refundable except where required by law.",
+      "PestPilot may change pricing, introduce new fees, or update billing terms with advance notice. Taxes, duties, and government charges are your responsibility unless explicitly included."
     ]
   },
   {
     title: "Data and Privacy",
     paragraphs: [
-      "As between the parties, you retain ownership of the business data you submit to the Service, subject to the rights needed by [Company Name] to provide, secure, maintain, and improve the platform. Your use of the Service is also subject to our Privacy Policy.",
+      "As between the parties, you retain ownership of the business data you submit to the Service, subject to the rights needed by PestPilot to provide, secure, maintain, and improve the platform. Your use of the Service is also subject to our Privacy Policy.",
       "You are responsible for ensuring that your collection and use of customer, employee, and compliance data complies with applicable law, including any notice or consent obligations."
     ]
   },
   {
     title: "Intellectual Property",
     paragraphs: [
-      "The Service, including its software, interface design, branding, documentation, and related content, is owned by [Company Name] or its licensors and is protected by applicable intellectual property laws. These Terms do not transfer ownership of any intellectual property rights.",
-      "Subject to these Terms, [Company Name] grants you a limited, non-exclusive, non-transferable, revocable right to access and use the Service for your internal business purposes."
+      "The Service, including its software, interface design, branding, documentation, and related content, is owned by PestPilot or its licensors and is protected by applicable intellectual property laws. These Terms do not transfer ownership of any intellectual property rights.",
+      "Subject to these Terms, PestPilot grants you a limited, non-exclusive, non-transferable, revocable right to access and use the Service for your internal business purposes."
     ]
   },
   {
     title: "Limitation of Liability",
     paragraphs: [
-      "This section is placeholder legal text and must be reviewed by counsel. To the maximum extent permitted by law, [Company Name] will not be liable for indirect, incidental, special, consequential, or punitive damages, or for lost profits, revenues, data, or goodwill arising from or related to the Service.",
-      "To the maximum extent permitted by law, the aggregate liability of [Company Name] for claims arising out of or relating to the Service will not exceed the amounts paid by you to [Company Name] for the Service during the twelve months preceding the event giving rise to the claim."
+      "To the maximum extent permitted by law, PestPilot will not be liable for indirect, incidental, special, consequential, or punitive damages, or for lost profits, revenues, data, or goodwill arising from or related to the Service.",
+      "To the maximum extent permitted by law, the aggregate liability of PestPilot for claims arising out of or relating to the Service will not exceed the amounts paid by you to PestPilot for the Service during the twelve months preceding the event giving rise to the claim."
     ]
   },
   {
     title: "Termination",
     paragraphs: [
-      "You may stop using the Service at any time, subject to any subscription commitments or cancellation procedures that apply to your plan. [Company Name] may suspend or terminate access if you violate these Terms, fail to pay fees when due, or create legal, security, or operational risk.",
+      "You may stop using the Service at any time, subject to any subscription commitments or cancellation procedures that apply to your plan. PestPilot may suspend or terminate access if you violate these Terms, fail to pay fees when due, or create legal, security, or operational risk.",
       "Upon termination, your right to use the Service will cease, though provisions that by their nature should survive termination will remain in effect. Data retention and export timing should be finalized in production terms."
     ]
   },
   {
     title: "Contact",
     paragraphs: [
-      "If you have questions about these placeholder Terms of Service, please contact [Company Name] at [Contact Email]. Final production contact information, governing law, venue, and dispute terms should be added before launch."
+      "If you have questions about these Terms of Service, please contact PestPilot at hello@pestpilot.io."
     ]
   }
 ] as const;

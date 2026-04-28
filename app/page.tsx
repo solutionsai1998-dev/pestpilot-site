@@ -2,6 +2,7 @@ import { ChemicalTracking } from "@/components/home/ChemicalTracking";
 import { Differentiator } from "@/components/home/Differentiator";
 import { FeatureShowcase } from "@/components/home/FeatureShowcase";
 import { FinalCTA } from "@/components/home/FinalCTA";
+import { FoundingMembers } from "@/components/home/FoundingMembers";
 import { Hero } from "@/components/home/Hero";
 import { PainPoints } from "@/components/home/PainPoints";
 import { PaperTransition } from "@/components/home/PaperTransition";
@@ -23,6 +24,7 @@ export default function HomePage() {
       <PaperTransition />
       <Testimonials />
       <PricingPreview />
+      <FoundingMembers />
       <FinalCTA />
     </>
   );
