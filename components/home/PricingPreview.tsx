@@ -1,30 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
 import { Button } from "@/components/shared/Button";
-
-const tiers = [
-  {
-    name: "Starter",
-    price: "$99/mo",
-    tagline: "For the solo operator ready to go digital",
-    features: ["Up to 3 users", "Scheduling and calendar", "Customer CRM", "Recurring cycle management"],
-    highlighted: false
-  },
-  {
-    name: "Professional",
-    price: "$199/mo",
-    tagline: "For growing teams that need it all",
-    features: ["Up to 10 users", "Dispatch and routing", "Chemical tracking", "EPA compliance reports"],
-    highlighted: true
-  },
-  {
-    name: "Enterprise",
-    price: "$299/mo",
-    tagline: "For established companies with compliance needs",
-    features: ["Unlimited users", "Custom reporting", "Priority support", "Multi-location support"],
-    highlighted: false
-  }
-];
+import { pricingTiers } from "@/lib/pricing";
 
 export function PricingPreview() {
   return (
@@ -54,7 +31,7 @@ export function PricingPreview() {
         </div>
 
         <div className="mt-10 grid gap-6 xl:grid-cols-3">
-          {tiers.map((tier) => (
+          {pricingTiers.monthly.map((tier) => (
             <div
               className={`relative rounded-[28px] border p-7 shadow-sm transition-transform duration-200 ${
                 tier.highlighted
@@ -72,7 +49,7 @@ export function PricingPreview() {
               <p className="text-small font-semibold uppercase tracking-[0.18em] text-primary-light">
                 {tier.name}
               </p>
-              <p className="mt-4 text-4xl font-extrabold tracking-tight text-primary">{tier.price}</p>
+              <p className="mt-4 text-4xl font-extrabold tracking-tight text-primary">{tier.price}/mo</p>
               <p className="mt-3 min-h-[3rem] text-small text-text-light">{tier.tagline}</p>
 
               <div className="mt-6 space-y-3">

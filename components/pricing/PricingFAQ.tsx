@@ -4,7 +4,7 @@ const faqs = [
   {
     question: "Do you charge per technician?",
     answer:
-      "No. PestPilot uses flat monthly pricing by plan, so you can add field techs without getting penalized on every seat."
+      "No. PestPilot uses flat monthly pricing by plan. Starter includes up to 3 users, Professional includes up to 10, and Enterprise includes unlimited users without per-technician add-on fees."
   },
   {
     question: "Can you help migrate data from my current software?",
@@ -14,7 +14,7 @@ const faqs = [
   {
     question: "Is chemical tracking included on every plan?",
     answer:
-      "Yes, every plan includes chemical logging. Professional and Enterprise add deeper inventory controls and compliance reporting."
+      "Every plan includes essential chemical application logs. Professional adds full inventory controls and one-click EPA reports; Enterprise adds custom exports and deeper compliance workflows."
   },
   {
     question: "Can I switch plans later?",

@@ -1,53 +1,4 @@
-const rows = [
-  {
-    feature: "Users included",
-    starter: "Up to 3 users",
-    professional: "Up to 10 users",
-    enterprise: "Unlimited users"
-  },
-  {
-    feature: "Scheduling and recurring cycles",
-    starter: "Included",
-    professional: "Included",
-    enterprise: "Included"
-  },
-  {
-    feature: "Dispatch and routing",
-    starter: "Basic",
-    professional: "Advanced",
-    enterprise: "Advanced"
-  },
-  {
-    feature: "Chemical tracking",
-    starter: "Essential logs",
-    professional: "Full inventory + reporting",
-    enterprise: "Full inventory + reporting"
-  },
-  {
-    feature: "EPA compliance reports",
-    starter: "Monthly export",
-    professional: "One-click reports",
-    enterprise: "One-click + custom exports"
-  },
-  {
-    feature: "Customer reminders",
-    starter: "Email",
-    professional: "Email + SMS",
-    enterprise: "Email + SMS"
-  },
-  {
-    feature: "Reporting dashboards",
-    starter: "Core metrics",
-    professional: "Advanced dashboards",
-    enterprise: "Custom dashboards"
-  },
-  {
-    feature: "Support",
-    starter: "Standard",
-    professional: "Priority",
-    enterprise: "White-glove"
-  }
-];
+import { featureRows } from "@/lib/pricing";
 
 export function FeatureMatrix() {
   return (
@@ -80,7 +31,7 @@ export function FeatureMatrix() {
                 </tr>
               </thead>
               <tbody>
-                {rows.map((row, index) => (
+                {featureRows.map((row, index) => (
                   <tr className={index % 2 === 0 ? "bg-white" : "bg-bg-alt/60"} key={row.feature}>
                     <td className="px-6 py-5 text-sm font-semibold text-primary">{row.feature}</td>
                     <td className="px-6 py-5 text-sm text-text">{row.starter}</td>

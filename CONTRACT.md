@@ -351,7 +351,7 @@ Standard footer with nav, legal, social, copyright.
 | | Starter | Professional | Enterprise |
 |---|---------|-------------|------------|
 | **Price** | $99/mo | $199/mo | $299/mo |
-| **Tagline** | "For the solo operator ready to go digital" | "For growing teams that need it all" | "For established companies with compliance needs" |
+| **Tagline** | "For the solo operator ready to go digital" | "For growing teams that need more leverage" | "For established companies with scale needs" |
 | **Target** | 1-2 techs | 3-7 techs | 8-10+ techs |
 | **Users** | Up to 3 users | Up to 10 users | Unlimited users |
 | **Highlight** | — | Most popular | — |
@@ -360,31 +360,28 @@ Standard footer with nav, legal, social, copyright.
 
 | Feature | Starter | Professional | Enterprise |
 |---------|---------|-------------|------------|
+| Users included | Up to 3 | Up to 10 | Unlimited |
 | Scheduling & Calendar | ✅ | ✅ | ✅ |
 | Customer CRM | ✅ | ✅ | ✅ |
-| Mobile App (iOS & Android) | ✅ | ✅ | ✅ |
+| Mobile Field Workflow | ✅ | ✅ | ✅ |
 | Invoicing & Payments | ✅ | ✅ | ✅ |
-| Recurring Cycle Management | ✅ | ✅ | ✅ |
-| Customer Portal | ✅ | ✅ | ✅ |
-| Dispatch & Routing | — | ✅ | ✅ |
-| GPS Tracking | — | ✅ | ✅ |
-| Chemical Tracking | — | ✅ | ✅ |
-| EPA Compliance Reports | — | ✅ | ✅ |
-| Chemical Inventory | — | ✅ | ✅ |
-| QuickBooks Integration | — | ✅ | ✅ |
-| Custom Reporting | — | — | ✅ |
-| API Access | — | — | ✅ |
-| Priority Support | — | — | ✅ |
-| Dedicated Onboarding | — | — | ✅ |
+| Recurring Cycle Management | ✅ | ✅ auto-generation | ✅ auto-generation + custom workflows |
+| Dispatch & Routing | Basic route view | Advanced dispatch | Advanced + multi-location |
+| Chemical Application Logs | Essential logs | ✅ | ✅ |
+| EPA Compliance Reports | Basic manual export | One-click reports | One-click + custom exports |
+| Chemical Inventory | — | ✅ | ✅ custom exports |
+| Customer Reminders | Email | Email + SMS | Email + SMS + custom workflows |
+| Reporting | Core metrics | Operational dashboards | Advanced dashboards + technician scorecards |
+| Callback Tracking / QA | — | — | ✅ |
+| QuickBooks Integration | — | Planned | Planned/custom |
+| API Access | — | — | Planned/custom |
+| Priority Support | Standard | Priority | White-glove onboarding |
 | Multi-Location Support | — | — | ✅ |
 
 ### Add-Ons
 
-| Add-on | Price |
-|--------|-------|
-| Additional users (per user) | $15/mo |
-| Advanced route optimization | $29/mo |
-| Marketing suite (email campaigns, review requests) | $49/mo |
+No per-technician add-on fees. Plan limits are handled by upgrading tiers rather than charging per user.
+Future add-ons such as advanced route optimization or marketing automation should only be listed publicly after they exist.
 
 ### Page Layout
 

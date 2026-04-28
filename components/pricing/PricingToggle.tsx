@@ -2,91 +2,7 @@
 
 import { useState } from "react";
 import { TierCard } from "@/components/pricing/TierCard";
-
-const plans = {
-  monthly: [
-    {
-      name: "Starter",
-      price: "$99",
-      description: "For solo operators ready to replace paper, spreadsheets, and callback chaos.",
-      features: [
-        "Up to 3 users",
-        "Scheduling and recurring cycles",
-        "Customer CRM and service history",
-        "Essential chemical logs"
-      ],
-      highlighted: false,
-      badge: undefined
-    },
-    {
-      name: "Professional",
-      price: "$199",
-      description: "For growing teams that need dispatch, reminders, and full compliance visibility.",
-      features: [
-        "Up to 10 users",
-        "Advanced dispatch and routing",
-        "Full chemical inventory tracking",
-        "One-click EPA compliance reports"
-      ],
-      highlighted: true,
-      badge: "Most Popular"
-    },
-    {
-      name: "Enterprise",
-      price: "$299",
-      description: "For established operators managing multiple crews, territories, or locations.",
-      features: [
-        "Unlimited users",
-        "Custom reporting dashboards",
-        "Priority onboarding and support",
-        "Multi-location management"
-      ],
-      highlighted: false,
-      badge: undefined
-    }
-  ],
-  annual: [
-    {
-      name: "Starter",
-      price: "$79",
-      description: "For solo operators ready to replace paper, spreadsheets, and callback chaos.",
-      features: [
-        "Up to 3 users",
-        "Scheduling and recurring cycles",
-        "Customer CRM and service history",
-        "Essential chemical logs"
-      ],
-      highlighted: false,
-      badge: undefined
-    },
-    {
-      name: "Professional",
-      price: "$169",
-      description: "For growing teams that need dispatch, reminders, and full compliance visibility.",
-      features: [
-        "Up to 10 users",
-        "Advanced dispatch and routing",
-        "Full chemical inventory tracking",
-        "One-click EPA compliance reports"
-      ],
-      highlighted: true,
-      badge: "Most Popular"
-    },
-    {
-      name: "Enterprise",
-      price: "$249",
-      description: "For established operators managing multiple crews, territories, or locations.",
-      features: [
-        "Unlimited users",
-        "Custom reporting dashboards",
-        "Priority onboarding and support",
-        "Multi-location management"
-      ],
-      highlighted: false,
-      badge: undefined
-    }
-  ]
-};
+import { pricingTiers } from "@/lib/pricing";
 
 export function PricingToggle() {
   type BillingCycle = "monthly" | "annual";
@@ -139,7 +55,7 @@ export function PricingToggle() {
         role="tabpanel"
         tabIndex={0}
       >
-        {plans[billingCycle].map((plan) => (
+        {pricingTiers[billingCycle].map((plan) => (
           <TierCard
             badge={plan.badge}
             billingLabel={billingCycle === "monthly" ? "/mo" : "/mo billed annually"}

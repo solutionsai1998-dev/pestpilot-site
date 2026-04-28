@@ -1,3 +1,5 @@
+import { pricingTiers } from "@/lib/pricing";
+
 const schema = {
   "@context": "https://schema.org",
   "@type": "Product",
@@ -8,29 +10,13 @@ const schema = {
     "@type": "Brand",
     name: "PestPilot"
   },
-  offers: [
-    {
-      "@type": "Offer",
-      name: "Starter",
-      price: "79",
-      priceCurrency: "USD",
-      availability: "https://schema.org/InStock"
-    },
-    {
-      "@type": "Offer",
-      name: "Growth",
-      price: "149",
-      priceCurrency: "USD",
-      availability: "https://schema.org/InStock"
-    },
-    {
-      "@type": "Offer",
-      name: "Scale",
-      price: "299",
-      priceCurrency: "USD",
-      availability: "https://schema.org/InStock"
-    }
-  ]
+  offers: pricingTiers.monthly.map((tier) => ({
+    "@type": "Offer",
+    name: tier.name,
+    price: tier.schemaPrice,
+    priceCurrency: "USD",
+    availability: "https://schema.org/InStock",
+  }))
 };
 
 export function PricingSchema() {
