@@ -59,8 +59,8 @@ export function MobileMenu() {
                 </Link>
               ))}
             </nav>
-            <Button className="w-full" href="/demo" onClick={() => setIsOpen(false)}>
-              Start Free Trial
+            <Button className="w-full" href="/early-access" onClick={() => setIsOpen(false)}>
+              Apply for Early Access
             </Button>
           </aside>
         </div>

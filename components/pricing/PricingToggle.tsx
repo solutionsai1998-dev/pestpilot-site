@@ -143,11 +143,11 @@ export function PricingToggle() {
           <TierCard
             badge={plan.badge}
             billingLabel={billingCycle === "monthly" ? "/mo" : "/mo billed annually"}
-            ctaLabel="Start Free Trial"
+            ctaLabel="Apply for Early Access"
             description={plan.description}
             features={plan.features}
             highlighted={plan.highlighted}
-            href="/demo"
+            href="/early-access"
             key={`${billingCycle}-${plan.name}`}
             name={plan.name}
             price={plan.price}

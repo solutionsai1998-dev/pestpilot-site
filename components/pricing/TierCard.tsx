@@ -21,8 +21,8 @@ export function TierCard({
   billingLabel,
   description,
   features,
-  href = "/demo",
-  ctaLabel = "Start Free Trial",
+  href = "/early-access",
+  ctaLabel = "Apply for Early Access",
   highlighted = false,
   badge
 }: TierCardProps) {

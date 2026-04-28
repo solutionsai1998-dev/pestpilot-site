@@ -80,7 +80,7 @@ export default function PricingPage() {
               Ready to put your routes, compliance, and billing in one system?
             </h2>
             <p className="mt-4 text-body-mobile text-white/76 md:text-body">
-              Start your free trial and bring your customer list over without rebuilding your whole
+              Apply for early access and bring your customer list over without rebuilding your whole
               operation from scratch.
             </p>
             <div className="mt-8 flex justify-center">

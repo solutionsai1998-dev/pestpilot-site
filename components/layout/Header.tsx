@@ -26,7 +26,7 @@ export function Header() {
         </Link>
         <div className="hidden items-center gap-8 md:flex">
           <Nav />
-          <Button href="/demo">Start Free Trial</Button>
+          <Button href="/early-access">Apply for Early Access</Button>
         </div>
         <MobileMenu />
       </div>

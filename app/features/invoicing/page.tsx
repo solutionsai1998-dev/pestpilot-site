@@ -125,7 +125,7 @@ export default function InvoicingPage() {
               completion and recurring service cycles, so collections stay aligned with how pest control work actually happens.
             </p>
             <div className="mt-8">
-              <Button href="/demo">Start Free Trial</Button>
+              <Button href="/early-access">Apply for Early Access</Button>
             </div>
           </div>
         </div>
