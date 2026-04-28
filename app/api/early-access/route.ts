@@ -4,7 +4,9 @@ import path from "path";
 
 export const runtime = "nodejs";
 
-const DATA_FILE = path.join(process.cwd(), "data", "submissions.json");
+const DATA_FILE = process.env.VERCEL
+  ? path.join("/tmp", "pestpilot-early-access-submissions.json")
+  : path.join(process.cwd(), "data", "submissions.json");
 
 type Submission = {
   name: string;
