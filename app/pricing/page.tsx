@@ -62,7 +62,7 @@ export default function PricingPage() {
               grow without surprise seat costs.
             </p>
             <p className="mt-6 text-small font-medium text-text-light">
-              No credit card · Cancel anytime · Free data migration
+              Apply for early access · Free data migration · No payment to start
             </p>
           </div>
 
@@ -84,7 +84,7 @@ export default function PricingPage() {
               operation from scratch.
             </p>
             <div className="mt-8 flex justify-center">
-              <Button href="/demo">Start Your Free Trial</Button>
+              <Button href="/early-access">Apply for Early Access</Button>
             </div>
           </div>
         </div>

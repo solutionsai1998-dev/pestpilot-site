@@ -5,7 +5,7 @@ const steps = [
   {
     number: "01",
     icon: NotebookTabs,
-    title: "Sign up",
+    title: "Apply for early access",
     detail: "15 minutes. No tech degree required."
   },
   {
@@ -53,8 +53,8 @@ export function PaperTransition() {
               </div>
 
               <div className="mt-8">
-                <Button href="/demo">
-                  Start free — we&apos;ll help you move
+                <Button href="/early-access">
+                  Apply for early access — we&apos;ll help you move
                 </Button>
               </div>
             </div>

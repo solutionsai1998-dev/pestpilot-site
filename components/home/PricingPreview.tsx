@@ -96,7 +96,7 @@ export function PricingPreview() {
         </div>
 
         <p className="mt-8 text-center text-small text-text-light">
-          No credit card required · Cancel anytime · Free data migration
+          Apply for early access · Cancel anytime · Free data migration
         </p>
       </div>
     </section>

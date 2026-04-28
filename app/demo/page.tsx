@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 
 const trustPoints = [
   {
-    title: "No credit card required",
+    title: "Free to book",
     icon: CreditCard
   },
   {
