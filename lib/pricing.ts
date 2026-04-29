@@ -2,9 +2,10 @@ export const pricingTiers = {
   monthly: [
     {
       name: "Starter",
-      price: "$99",
-      schemaPrice: "99",
-      description: "For solo operators ready to replace paper, spreadsheets, and callback chaos.",
+      price: "$49",
+      regularPrice: "$99",
+      schemaPrice: "49",
+      description: "Early-access founding rate for solo operators ready to replace paper, spreadsheets, and callback chaos.",
       tagline: "For the solo operator ready to go digital",
       features: [
         "Up to 3 users",
@@ -13,7 +14,7 @@ export const pricingTiers = {
         "Essential chemical application logs",
       ],
       highlighted: false,
-      badge: undefined,
+      badge: "Founding Rate",
     },
     {
       name: "Professional",
@@ -49,9 +50,10 @@ export const pricingTiers = {
   annual: [
     {
       name: "Starter",
-      price: "$79",
-      schemaPrice: "79",
-      description: "For solo operators ready to replace paper, spreadsheets, and callback chaos.",
+      price: "$49",
+      regularPrice: "$99",
+      schemaPrice: "49",
+      description: "Early-access founding rate for solo operators ready to replace paper, spreadsheets, and callback chaos.",
       tagline: "For the solo operator ready to go digital",
       features: [
         "Up to 3 users",
@@ -60,7 +62,7 @@ export const pricingTiers = {
         "Essential chemical application logs",
       ],
       highlighted: false,
-      badge: undefined,
+      badge: "Founding Rate",
     },
     {
       name: "Professional",

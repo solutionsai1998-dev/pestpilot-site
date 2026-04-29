@@ -39,7 +39,7 @@ export default function PricingPage() {
             <span className="mr-1 inline-flex items-center rounded-full bg-accent px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide text-white">
               Founding Deal
             </span>{" "}
-            Solo operators pay{" "}
+            Early-access Starter is {" "}
             <span className="font-bold text-accent">$49/mo</span> (normally $99/mo) — locked for life.{" "}
             <a className="font-semibold text-primary underline underline-offset-2 transition hover:text-primary-light" href="/early-access">
               Claim your spot →
@@ -62,7 +62,7 @@ export default function PricingPage() {
               grow without surprise seat costs.
             </p>
             <p className="mt-6 text-small font-medium text-text-light">
-              Apply for early access · Free data migration · No payment to start
+              Early-access Starter: $49/mo locked for life · Free data migration · No payment to apply
             </p>
           </div>
 

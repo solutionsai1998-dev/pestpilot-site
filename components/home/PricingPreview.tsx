@@ -40,16 +40,21 @@ export function PricingPreview() {
               }`}
               key={tier.name}
             >
-              {tier.highlighted ? (
+              {tier.badge ? (
                 <div className="absolute left-7 top-0 -translate-y-1/2 rounded-full bg-accent px-4 py-2 text-small font-semibold text-white shadow-md">
-                  Most Popular
+                  {tier.badge}
                 </div>
               ) : null}
 
               <p className="text-small font-semibold uppercase tracking-[0.18em] text-primary-light">
                 {tier.name}
               </p>
-              <p className="mt-4 text-4xl font-extrabold tracking-tight text-primary">{tier.price}/mo</p>
+              <div className="mt-4">
+                <p className="text-4xl font-extrabold tracking-tight text-primary">{tier.price}/mo</p>
+                {"regularPrice" in tier ? (
+                  <p className="mt-1 text-small text-text-light line-through">normally {tier.regularPrice}/mo</p>
+                ) : null}
+              </div>
               <p className="mt-3 min-h-[3rem] text-small text-text-light">{tier.tagline}</p>
 
               <div className="mt-6 space-y-3">
