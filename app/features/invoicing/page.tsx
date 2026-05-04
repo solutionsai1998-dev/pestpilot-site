@@ -28,8 +28,8 @@ export const metadata: Metadata = {
 
 const features = [
   {
-    title: "On-site card payments",
-    description: "Let technicians collect payment in the field so completed work turns into cash faster.",
+    title: "Field payment collection",
+    description: "Record payments in the field so completed work turns into cash faster.",
     icon: CreditCard
   },
   {
@@ -39,7 +39,7 @@ const features = [
   },
   {
     title: "QuickBooks sync",
-    description: "Push invoice data into accounting workflows without double entry or end-of-week cleanup.",
+    description: "Push invoices, payments, and customer data into QuickBooks to eliminate double entry.",
     icon: Receipt
   },
   {
@@ -69,6 +69,21 @@ export default function InvoicingPage() {
               Send invoices the moment a job is done. Collect payment in the field and sync
               everything back to the office.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-12">
+        <div className="container">
+          <div className="mx-auto max-w-4xl overflow-hidden rounded-[24px] border border-primary/10 shadow-xl">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/screenshots/invoices.png"
+              alt="PestPilot invoicing dashboard showing invoice list with payment status"
+              className="w-full h-auto block"
+              width={1440}
+              height={900}
+            />
           </div>
         </div>
       </section>

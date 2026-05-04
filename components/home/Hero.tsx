@@ -1,6 +1,6 @@
 "use client";
 
-import { Play, ShieldCheck, Sparkles, TabletSmartphone } from "lucide-react";
+import { Play, Sparkles } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/shared/Button";
 import { VideoModal } from "@/components/shared/VideoModal";
@@ -70,104 +70,15 @@ export function Hero() {
             <div className="relative mx-auto w-full max-w-2xl lg:mx-0">
               <div className="absolute -left-6 top-10 h-28 w-28 rounded-full bg-accent/20 blur-3xl" />
               <div className="absolute -right-10 bottom-8 h-32 w-32 rounded-full bg-emerald-300/20 blur-3xl" />
-              <div className="relative rounded-[28px] border border-white/12 bg-white/10 p-4 shadow-xl backdrop-blur">
-                <div className="rounded-[24px] border border-white/12 bg-[#f6f8f4] p-4 text-text shadow-xl">
-                  <div className="flex items-center justify-between border-b border-primary/10 pb-4">
-                    <div>
-                      <p className="text-small font-semibold uppercase tracking-[0.24em] text-primary-light">
-                        PestPilot Command Center
-                      </p>
-                      <p className="mt-1 text-sm text-text-light">
-                        Today&apos;s routes, retreatments, and compliance in one view
-                      </p>
-                    </div>
-                    <div className="hidden rounded-full bg-primary px-4 py-2 text-small font-semibold text-white sm:block">
-                      Tuesday Queue
-                    </div>
-                  </div>
-
-                  <div className="mt-4 grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
-                    <div className="rounded-[20px] border border-primary/10 bg-white p-4 shadow-md">
-                      <div className="flex items-center justify-between">
-                        <div>
-                          <p className="text-small font-semibold uppercase tracking-[0.18em] text-text-light">
-                            Treatment Calendar
-                          </p>
-                          <p className="mt-1 text-xl font-semibold text-primary">28 jobs scheduled</p>
-                        </div>
-                        <ShieldCheck className="h-9 w-9 text-accent" />
-                      </div>
-                      <div className="mt-4 space-y-3">
-                        {[
-                          { title: "Initial service", meta: "8:00 AM · Desert Bloom HOA", tone: "bg-emerald-50 text-primary" },
-                          { title: "30-day retreatment", meta: "10:30 AM · Mesa Family Dental", tone: "bg-amber-50 text-amber-900" },
-                          { title: "Quarterly perimeter", meta: "1:15 PM · Red Canyon Storage", tone: "bg-stone-100 text-text" }
-                        ].map((job) => (
-                          <div
-                            className="flex items-center justify-between rounded-2xl border border-border/80 px-4 py-3"
-                            key={job.title}
-                          >
-                            <div>
-                              <p className="font-semibold text-text">{job.title}</p>
-                              <p className="text-small text-text-light">{job.meta}</p>
-                            </div>
-                            <span className={`rounded-full px-3 py-1 text-xs font-semibold ${job.tone}`}>
-                              Ready
-                            </span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-
-                    <div className="grid gap-4">
-                      <div className="rounded-[20px] border border-primary/10 bg-primary p-5 text-white shadow-lg">
-                        <div className="flex items-center justify-between">
-                          <div>
-                            <p className="text-small uppercase tracking-[0.18em] text-white/60">
-                              Chemical Log
-                            </p>
-                            <p className="mt-1 text-lg font-semibold">Bifen IT · Lot B-248</p>
-                          </div>
-                          <TabletSmartphone className="h-8 w-8 text-accent" />
-                        </div>
-                        <div className="mt-4 space-y-2 text-small text-white/78">
-                          <div className="flex items-center justify-between rounded-2xl bg-white/10 px-3 py-2">
-                            <span>Applied by Carlos R.</span>
-                            <span>1.5 oz</span>
-                          </div>
-                          <div className="flex items-center justify-between rounded-2xl bg-white/10 px-3 py-2">
-                            <span>Applicator license</span>
-                            <span>Verified</span>
-                          </div>
-                          <div className="flex items-center justify-between rounded-2xl bg-white/10 px-3 py-2">
-                            <span>Report status</span>
-                            <span>Audit ready</span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="rounded-[20px] border border-primary/10 bg-white p-5 shadow-md">
-                        <p className="text-small uppercase tracking-[0.18em] text-text-light">
-                          Founding rollout snapshot
-                        </p>
-                        <p className="mt-1 text-lg font-semibold text-primary">
-                          Recurring plans, reminders, and invoicing in one workflow
-                        </p>
-                        <div className="mt-4 h-3 overflow-hidden rounded-full bg-bg-alt">
-                          <div className="h-full w-[72%] rounded-full bg-[linear-gradient(90deg,#2d6a4f,#f77f00)]" />
-                        </div>
-                        <div className="mt-4 flex items-center justify-between text-small text-text-light">
-                          <span>Rollout checklist</span>
-                          <span className="font-semibold text-text">Import → route → launch</span>
-                        </div>
-                        <div className="mt-2 flex items-center justify-between text-small text-text-light">
-                          <span>Best fit</span>
-                          <span className="font-semibold text-text">Solo + small crews</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div className="relative rounded-[28px] border border-white/12 shadow-2xl overflow-hidden">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/screenshots/dashboard.png"
+                  alt="PestPilot Command Center — dashboard overview with routes, jobs, and compliance"
+                  className="w-full h-auto block"
+                  width={1440}
+                  height={900}
+                />
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, BarChart3, Calendar, FlaskConical, Map, Receipt, ShieldCheck } from "lucide-react";
+import { ArrowRight, BarChart3, Calendar, FlaskConical, Globe, Map, Receipt, ShieldCheck, Users } from "lucide-react";
 import { Card } from "@/components/shared/Card";
 import { Badge } from "@/components/shared/Badge";
 
@@ -77,6 +77,13 @@ const sections = [
         href: "/features/invoicing",
         icon: Receipt,
         featured: false
+      },
+      {
+        title: "Customer Portal",
+        description: "Self-service portal where customers view appointments, pay invoices, reschedule, and message your team.",
+        href: "/features/invoicing",
+        icon: Globe,
+        featured: true
       }
     ]
   }

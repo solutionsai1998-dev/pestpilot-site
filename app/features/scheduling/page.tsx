@@ -73,6 +73,21 @@ export default function SchedulingPage() {
         </div>
       </section>
 
+      <section className="bg-white py-12">
+        <div className="container">
+          <div className="mx-auto max-w-4xl overflow-hidden rounded-[24px] border border-primary/10 shadow-xl">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/screenshots/calendar.png"
+              alt="PestPilot treatment calendar showing scheduled recurring jobs"
+              className="w-full h-auto block"
+              width={1440}
+              height={900}
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="section-padding bg-white">
         <div className="container">
           <div className="grid gap-6 md:grid-cols-2">

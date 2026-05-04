@@ -143,8 +143,8 @@ export const featureRows = [
   {
     feature: "Customer reminders",
     starter: "Email",
-    professional: "Email + SMS",
-    enterprise: "Email + SMS + custom workflows",
+    professional: "Email + SMS (coming soon)",
+    enterprise: "Email + SMS + custom workflows (coming soon)",
   },
   {
     feature: "Reporting dashboards",

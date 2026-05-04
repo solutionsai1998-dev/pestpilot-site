@@ -28,13 +28,13 @@ export const metadata: Metadata = {
 
 const features = [
   {
-    title: "Route optimization",
-    description: "Cluster stops by density, urgency, and territory so techs spend more time treating and less time driving.",
+    title: "Route board",
+    description: "Organize stops by technician, drag jobs to reorder routes, and get Google Maps directions between stops.",
     icon: MapPinned
   },
   {
-    title: "GPS tracking",
-    description: "See where every technician is in the day and adjust the board when callbacks or urgent jobs hit.",
+    title: "Route status tracking",
+    description: "See which jobs are scheduled, in progress, complete, or delayed across every technician's board.",
     icon: Navigation
   },
   {
@@ -43,8 +43,8 @@ const features = [
     icon: TimerReset
   },
   {
-    title: "Mobile job cards",
-    description: "Push route order, property notes, and treatment context directly to the technician's phone.",
+    title: "Mobile-friendly job cards",
+    description: "Technicians see route order, property notes, and treatment context on their phone — no app install needed.",
     icon: Smartphone
   }
 ] as const;
@@ -66,9 +66,24 @@ export default function DispatchPage() {
               Routes built for pest control density
             </h1>
             <p className="mt-4 text-body-mobile text-text-light md:text-body">
-              Optimize by territory, service type, and urgency so techs spend less time driving and
+              Organize by technician, service type, and urgency so techs spend less time driving and
               more time treating.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-12">
+        <div className="container">
+          <div className="mx-auto max-w-4xl overflow-hidden rounded-[24px] border border-primary/10 shadow-xl">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/screenshots/dispatch.png"
+              alt="PestPilot dispatch board showing jobs organized by technician with route status"
+              className="w-full h-auto block"
+              width={1440}
+              height={900}
+            />
           </div>
         </div>
       </section>

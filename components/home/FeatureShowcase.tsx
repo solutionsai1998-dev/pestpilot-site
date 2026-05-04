@@ -62,11 +62,11 @@ const tabs = [
       "Customers can book online, pay online, and see their service history while reminders and digital reports keep the relationship active between visits.",
     features: [
       "Online booking and self-service portal",
-      "Automated text and email reminders before treatments",
+      "Automated email reminders before treatments",
       "Digital service reports with treatment details",
       "One-click payments from invoice and reminder links"
     ],
-    comingSoonIndices: [0],
+    comingSoonIndices: [],
     dashboardTitle: "Customer Portal",
     cards: [
       { label: "Bookings this week", value: "19" },
