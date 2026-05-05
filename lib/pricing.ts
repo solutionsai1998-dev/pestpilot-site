@@ -8,7 +8,7 @@ export const pricingTiers = {
       description: "Early-access founding rate for solo operators ready to replace paper, spreadsheets, and callback chaos.",
       tagline: "For the solo operator ready to go digital",
       features: [
-        "Up to 3 users",
+        "1 user",
         "Scheduling, calendar, and recurring cycles",
         "Customer CRM, service history, and invoicing",
         "Essential chemical application logs",
@@ -56,7 +56,7 @@ export const pricingTiers = {
       description: "Early-access founding rate for solo operators ready to replace paper, spreadsheets, and callback chaos.",
       tagline: "For the solo operator ready to go digital",
       features: [
-        "Up to 3 users",
+        "1 user",
         "Scheduling, calendar, and recurring cycles",
         "Customer CRM, service history, and invoicing",
         "Essential chemical application logs",
@@ -100,7 +100,7 @@ export const pricingTiers = {
 export const featureRows = [
   {
     feature: "Users included",
-    starter: "Up to 3 users",
+    starter: "1 user",
     professional: "Up to 10 users",
     enterprise: "Unlimited users",
   },

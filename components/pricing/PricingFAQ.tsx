@@ -4,7 +4,7 @@ const faqs = [
   {
     question: "Do you charge per technician?",
     answer:
-      "No. PestPilot uses flat monthly pricing by plan. Starter includes up to 3 users, Professional includes up to 10, and Enterprise includes unlimited users without per-technician add-on fees."
+      "No. PestPilot uses flat monthly pricing by plan. Starter includes 1 user, Professional includes up to 10, and Enterprise includes unlimited users without per-technician add-on fees."
   },
   {
     question: "Can you help migrate data from my current software?",
