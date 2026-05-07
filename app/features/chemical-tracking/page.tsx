@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ClipboardCheck, FileStack, FlaskConical, ShieldCheck } from "lucide-react";
+import { BellRing, ClipboardCheck, FileStack, FlaskConical, ShieldCheck } from "lucide-react";
 import { Badge } from "@/components/shared/Badge";
 import { Button } from "@/components/shared/Button";
 import { Card } from "@/components/shared/Card";
@@ -44,7 +44,7 @@ const features = [
   },
   {
     title: "Applicator license verification",
-    description: "Keep licensing visible so the right technician is assigned to the right work with fewer compliance gaps.",
+    description: "Track applicator licenses with automatic expiry alerts so certifications never lapse unnoticed.",
     icon: ShieldCheck
   }
 ] as const;
@@ -61,7 +61,7 @@ export default function ChemicalTrackingPage() {
       <section className="section-padding bg-primary text-white">
         <div className="container">
           <div className="mx-auto max-w-4xl text-center">
-            <Badge className="border-white/20 bg-white/10 text-accent">Chemical Tracking</Badge>
+            <Badge className="border-white/20 bg-white/10 text-accent">Chemical Tracking · Professional+</Badge>
             <h1 className="mt-5 text-h1-mobile font-extrabold tracking-tight text-white md:text-h1-desktop">
               EPA compliance, built in. Not bolted on.
             </h1>
@@ -109,6 +109,50 @@ export default function ChemicalTrackingPage() {
                 </Card>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-bg-alt">
+        <div className="container">
+          <div className="grid items-center gap-10 lg:grid-cols-2">
+            <div>
+              <Badge>License Tracking · Professional+</Badge>
+              <h2 className="mt-5 text-h2-mobile font-bold tracking-tight text-primary md:text-h2-desktop">
+                Keep every applicator certified before the next job is assigned.
+              </h2>
+              <p className="mt-4 text-body-mobile text-text-light md:text-body">
+                Track applicator licenses with automatic expiry alerts. Never let a certification lapse — PestPilot sends reminders before licenses expire.
+              </p>
+              <div className="mt-6 flex items-center gap-3 text-small font-semibold text-primary">
+                <BellRing className="h-5 w-5 text-accent" />
+                Expiry reminders before compliance becomes urgent
+              </div>
+            </div>
+            <div className="overflow-hidden rounded-[24px] border border-primary/10 bg-white shadow-xl">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/screenshots/licenses.png"
+                alt="PestPilot applicator license tracking with expiry dates"
+                className="block h-auto w-full"
+                width={1440}
+                height={900}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-white">
+        <div className="container">
+          <div className="max-w-3xl">
+            <Badge>EPA Reporting</Badge>
+            <h2 className="mt-5 text-h2-mobile font-bold tracking-tight text-primary md:text-h2-desktop">
+              Inspection-ready records in one click.
+            </h2>
+            <p className="mt-4 text-body-mobile text-text-light md:text-body">
+              PestPilot turns field application logs, chemical inventory, applicator details, and treatment history into EPA compliance reports without rebuilding the story from paper forms.
+            </p>
           </div>
         </div>
       </section>

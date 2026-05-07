@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { BellRing, CreditCard, Receipt, Repeat2 } from "lucide-react";
+import { BellRing, CreditCard, Receipt, Repeat2, WalletCards } from "lucide-react";
 import { Badge } from "@/components/shared/Badge";
 import { Button } from "@/components/shared/Button";
 import { Card } from "@/components/shared/Card";
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 const features = [
   {
     title: "Field payment collection",
-    description: "Record payments in the field so completed work turns into cash faster.",
+    description: "Record payments in the field or let customers pay online via Stripe so completed work turns into cash faster.",
     icon: CreditCard
   },
   {
@@ -61,7 +61,7 @@ export default function InvoicingPage() {
       <section className="section-padding bg-bg-alt">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
-            <Badge>Invoicing</Badge>
+            <Badge>Invoicing & Receivables · All plans</Badge>
             <h1 className="mt-5 text-h1-mobile font-extrabold tracking-tight text-primary md:text-h1-desktop">
               Get paid on-site, every time
             </h1>
@@ -105,6 +105,39 @@ export default function InvoicingPage() {
                 </Card>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-bg-alt">
+        <div className="container">
+          <div className="grid items-center gap-10 lg:grid-cols-2">
+            <div>
+              <Badge>Receivables Tracking · All plans</Badge>
+              <h2 className="mt-5 text-h2-mobile font-bold tracking-tight text-primary md:text-h2-desktop">
+                Know exactly who has paid and who needs a nudge.
+              </h2>
+              <p className="mt-4 text-body-mobile text-text-light md:text-body">
+                Track outstanding payments at a glance. See which invoices are paid, pending, or overdue — and let customers pay online via Stripe.
+              </p>
+              <div className="mt-6 flex items-center gap-3 text-small font-semibold text-primary">
+                <WalletCards className="h-5 w-5 text-accent" />
+                Stripe-powered online payments keep collections moving after the visit.
+              </div>
+            </div>
+            <Card className="rounded-[28px] p-7">
+              <h3 className="text-h3-mobile font-semibold text-primary md:text-h3-desktop">
+                Receivables stay visible from invoice to deposit.
+              </h3>
+              <div className="mt-6 space-y-4">
+                {["Paid", "Pending", "Overdue"].map((status) => (
+                  <div className="flex items-center justify-between rounded-2xl border border-border bg-white px-5 py-4" key={status}>
+                    <span className="font-semibold text-primary">{status}</span>
+                    <span className="text-small text-text-light">Visible in invoice list</span>
+                  </div>
+                ))}
+              </div>
+            </Card>
           </div>
         </div>
       </section>

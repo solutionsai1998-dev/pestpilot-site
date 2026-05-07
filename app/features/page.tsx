@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, BarChart3, Calendar, FlaskConical, Globe, Map, Receipt, ShieldCheck, Users } from "lucide-react";
+import { ArrowRight, ShieldCheck } from "lucide-react";
 import { Card } from "@/components/shared/Card";
 import { Badge } from "@/components/shared/Badge";
 
@@ -28,62 +28,81 @@ export const metadata: Metadata = {
 
 const sections = [
   {
-    heading: "For the Office",
-    description: "Keep scheduling, billing, and compliance moving from one clean command center.",
+    heading: "Run your office smoothly",
+    description: "Keep the calendar, team, and cash flow moving without chasing spreadsheets or status updates.",
     items: [
       {
-        title: "Scheduling",
-        description: "Automate recurring pest cycles, drag jobs on the calendar, and prevent schedule conflicts.",
+        title: "A full route calendar your office can trust",
+        feature: "Scheduling & Dispatch",
+        description: "Schedule recurring services, assign work, and keep routes clear before the day starts.",
         href: "/features/scheduling",
-        icon: Calendar,
-        featured: false
+        screenshot: "/screenshots/calendar.png",
+        alt: "PestPilot calendar showing scheduled jobs"
       },
       {
-        title: "Dispatch",
-        description: "Build smarter routes by territory and urgency so the office stays ahead of the day.",
-        href: "/features/dispatch",
-        icon: Map,
-        featured: false
-      }
-    ]
-  },
-  {
-    heading: "For the Field",
-    description: "Give technicians the exact workflow they need on the truck, on site, and after treatment.",
-    items: [
-      {
-        title: "Chemical Tracking",
-        description: "Log applications, track lot inventory, and stay audit-ready without extra paperwork.",
-        href: "/features/chemical-tracking",
-        icon: FlaskConical,
-        featured: true
+        title: "The right technician on the right job",
+        feature: "Team Management",
+        description: "Manage team members, assignments, and responsibilities so work moves cleanly from office to field.",
+        href: "/features/team-management",
+        screenshot: "/screenshots/team.png",
+        alt: "PestPilot team management dashboard",
+        badge: "Professional+"
       },
       {
-        title: "Reporting",
-        description: "See callback rates, technician scorecards, and recurring revenue from every completed job.",
-        href: "/features/reporting",
-        icon: BarChart3,
-        featured: false
-      }
-    ]
-  },
-  {
-    heading: "For the Customer",
-    description: "Make payment and communication feel modern without creating more admin work for your team.",
-    items: [
-      {
-        title: "Invoicing",
-        description: "Generate invoices instantly, collect field payments, and automate reminders after the visit.",
+        title: "Invoices sent fast, payments tracked clearly",
+        feature: "Invoicing & Billing",
+        description: "Create invoices from completed work, collect payments online, and see receivables at a glance.",
         href: "/features/invoicing",
-        icon: Receipt,
-        featured: false
+        screenshot: "/screenshots/invoices.png",
+        alt: "PestPilot invoice list with payment statuses"
+      }
+    ]
+  },
+  {
+    heading: "Stay compliant and protected",
+    description: "Keep chemical records, licenses, and performance data ready before an audit or review forces the issue.",
+    items: [
+      {
+        title: "Audit-ready chemical records without the scramble",
+        feature: "Chemical Tracking",
+        description: "Log applications, inventory lots, EPA records, and applicator licenses in the same workflow.",
+        href: "/features/chemical-tracking",
+        screenshot: "/screenshots/chemicals.png",
+        alt: "PestPilot chemical tracking dashboard",
+        badge: "Professional+"
       },
       {
-        title: "Customer Portal",
-        description: "Self-service portal where customers view appointments, pay invoices, reschedule, and message your team.",
+        title: "Know what is working before callbacks pile up",
+        feature: "Reporting & Scorecards",
+        description: "Track callbacks, revenue, chemical usage, and technician scorecards so reviews are based on facts.",
+        href: "/features/reporting",
+        screenshot: "/screenshots/reports.png",
+        alt: "PestPilot reporting dashboard",
+        badge: "Enterprise"
+      }
+    ]
+  },
+  {
+    heading: "Delight your customers",
+    description: "Make communication, payment, and your brand feel professional without adding office work.",
+    items: [
+      {
+        title: "Customers can pay, message, and stay informed",
+        feature: "Customer Portal & SMS",
+        description: "Give customers a self-service portal with online payments and SMS reminders that reduce missed visits.",
         href: "/features/customer-portal",
-        icon: Globe,
-        featured: true
+        screenshot: "/screenshots/portal-login.png",
+        alt: "PestPilot customer portal login screen",
+        badge: "Professional+ for SMS"
+      },
+      {
+        title: "A customer experience that looks like your company",
+        feature: "Branding & White-Label",
+        description: "Customize the customer-facing portal so reminders, payments, and service history reinforce your brand.",
+        href: "/features/branding",
+        screenshot: "/screenshots/branding.png",
+        alt: "PestPilot branding settings screen",
+        badge: "Enterprise"
       }
     ]
   }
@@ -100,11 +119,11 @@ export default function FeaturesPage() {
               Feature Tour
             </Badge>
             <h1 className="mt-5 text-h1-mobile font-extrabold tracking-tight text-primary md:text-h1-desktop">
-              Every feature is built around how pest control companies actually operate.
+              Run cleaner routes, cleaner books, and cleaner compliance from one place.
             </h1>
             <p className="mt-4 text-body-mobile text-text-light md:text-body">
-              Office workflows, field execution, customer communication, and compliance all live in
-              the same system, so nothing falls through the cracks between visits.
+              PestPilot organizes the daily work around what operators need most: a smooth office,
+              protected compliance, and customers who know what is happening next.
             </p>
           </div>
         </div>
@@ -121,25 +140,21 @@ export default function FeaturesPage() {
                 <p className="mt-3 text-body-mobile text-text-light md:text-body">{section.description}</p>
               </div>
 
-              <div className="mt-8 grid gap-6 md:grid-cols-2">
-                {section.items.map((item) => {
-                  const Icon = item.icon;
-
-                  return (
-                    <Card
-                      className={`rounded-[28px] p-7 ${
-                        item.featured ? "border-accent/40 bg-[linear-gradient(180deg,#fffaf2_0%,#ffffff_100%)] shadow-lg" : ""
-                      }`}
-                      key={item.title}
-                    >
-                      <span
-                        className={`inline-flex h-14 w-14 items-center justify-center rounded-2xl ${
-                          item.featured ? "bg-accent/12 text-accent" : "bg-primary/8 text-primary"
-                        }`}
-                      >
-                        <Icon className="h-6 w-6" />
-                      </span>
-                      <h2 className="mt-5 text-h3-mobile font-semibold text-primary md:text-h3-desktop">
+              <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {section.items.map((item) => (
+                  <Card className="overflow-hidden rounded-[28px] p-0" key={item.title}>
+                    <div className="aspect-[16/10] overflow-hidden border-b border-border bg-bg-alt">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={item.screenshot} alt={item.alt} className="h-full w-full object-cover object-top" />
+                    </div>
+                    <div className="p-7">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <p className="text-small font-semibold uppercase tracking-[0.18em] text-primary-light">
+                          {item.feature}
+                        </p>
+                        {"badge" in item ? <Badge className="px-2 py-0 text-[11px]">{item.badge}</Badge> : null}
+                      </div>
+                      <h2 className="mt-4 text-h3-mobile font-semibold text-primary md:text-h3-desktop">
                         {item.title}
                       </h2>
                       <p className="mt-3 text-small text-text-light">{item.description}</p>
@@ -150,9 +165,9 @@ export default function FeaturesPage() {
                         Learn more
                         <ArrowRight className="h-4 w-4" />
                       </Link>
-                    </Card>
-                  );
-                })}
+                    </div>
+                  </Card>
+                ))}
               </div>
             </div>
           ))}

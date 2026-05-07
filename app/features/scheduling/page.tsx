@@ -61,13 +61,14 @@ export default function SchedulingPage() {
       <section className="section-padding bg-bg-alt">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
-            <Badge>Scheduling</Badge>
+            <Badge>Scheduling · All plans</Badge>
             <h1 className="mt-5 text-h1-mobile font-extrabold tracking-tight text-primary md:text-h1-desktop">
               Recurring pest cycles, handled automatically
             </h1>
             <p className="mt-4 text-body-mobile text-text-light md:text-body">
               30/60/90 day, quarterly, and annual treatments scheduled without spreadsheets, sticky
-              notes, or memory.
+              notes, or memory. Recurring automation creates the next round for you so customers
+              never disappear between service cycles.
             </p>
           </div>
         </div>
@@ -126,6 +127,32 @@ export default function SchedulingPage() {
                   {index + 1}
                 </div>
                 <p className="mt-5 text-lg font-semibold text-primary">{step}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-white">
+        <div className="container">
+          <div className="max-w-3xl">
+            <p className="text-small font-semibold uppercase tracking-[0.24em] text-primary-light">
+              Related Features
+            </p>
+            <h2 className="mt-4 text-h2-mobile font-bold tracking-tight text-primary md:text-h2-desktop">
+              Keep the day moving after the schedule is set.
+            </h2>
+          </div>
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            {[
+              ["Dispatch", "/features/dispatch", "Turn scheduled work into cleaner daily routes."],
+              ["Team Management", "/features/team-management", "Assign the right technician and keep capacity visible."],
+              ["Customer Portal & SMS", "/features/customer-portal", "Remind customers before visits and reduce no-shows."]
+            ].map(([title, href, description]) => (
+              <Card className="rounded-[28px] p-7" key={title}>
+                <h3 className="text-lg font-semibold text-primary">{title}</h3>
+                <p className="mt-3 text-small text-text-light">{description}</p>
+                <Button className="mt-6" href={href}>Learn More</Button>
               </Card>
             ))}
           </div>
