@@ -21,12 +21,8 @@ const tabs = [
       "Chemical inventory tracking and EPA compliance reports"
     ],
     comingSoonIndices: [],
-    dashboardTitle: "Dispatch Board",
-    cards: [
-      { label: "Open schedule gaps", value: "3" },
-      { label: "Invoices sent today", value: "24" },
-      { label: "Callbacks due this week", value: "11" }
-    ]
+    screenshot: "/screenshots/dispatch.png",
+    screenshotAlt: "PestPilot dispatch board with scheduled jobs, technician assignments, and route view"
   },
   {
     id: "field-techs",
@@ -44,12 +40,8 @@ const tabs = [
       "Offline mode for crawl spaces, attics, and remote properties"
     ],
     comingSoonIndices: [],
-    dashboardTitle: "Tech Day View",
-    cards: [
-      { label: "Stops completed", value: "8/11" },
-      { label: "Chemical entries synced", value: "14" },
-      { label: "Average stop time", value: "27m" }
-    ]
+    screenshot: "/screenshots/technician-mobile-route.png",
+    screenshotAlt: "PestPilot technician mobile route view with GPS directions and job details"
   },
   {
     id: "customers",
@@ -67,12 +59,8 @@ const tabs = [
       "One-click payments from invoice and reminder links"
     ],
     comingSoonIndices: [],
-    dashboardTitle: "Customer Portal",
-    cards: [
-      { label: "Bookings this week", value: "19" },
-      { label: "Reminder delivery", value: "98%" },
-      { label: "Invoices paid online", value: "72%" }
-    ]
+    screenshot: "/screenshots/customers.png",
+    screenshotAlt: "PestPilot customer management with treatment history and property details"
   }
 ] as const;
 
@@ -198,68 +186,15 @@ export function FeatureShowcase() {
           <div className="relative">
             <div className="absolute -left-4 top-8 h-24 w-24 rounded-full bg-accent/15 blur-3xl" />
             <div className="absolute -right-2 bottom-2 h-20 w-20 rounded-full bg-primary/15 blur-3xl" />
-            <div className="relative overflow-hidden rounded-[28px] border border-primary/10 bg-white p-5 shadow-xl">
-              <div className="flex items-center justify-between border-b border-border pb-4">
-                <div>
-                  <p className="text-small font-semibold uppercase tracking-[0.22em] text-primary-light">
-                    {activePanel.dashboardTitle}
-                  </p>
-                  <p className="mt-1 text-sm text-text-light">{activePanel.shortLabel} workspace mockup</p>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="h-3 w-3 rounded-full bg-rose-300" />
-                  <span className="h-3 w-3 rounded-full bg-amber-300" />
-                  <span className="h-3 w-3 rounded-full bg-emerald-300" />
-                </div>
-              </div>
-
-              <div className="mt-5 grid gap-4 md:grid-cols-[1fr_0.85fr]">
-                <div className="rounded-3xl bg-bg-alt p-4">
-                  <div className="grid grid-cols-3 gap-3">
-                    {activePanel.cards.map((card) => (
-                      <div className="rounded-2xl bg-white p-4 shadow-sm" key={card.label}>
-                        <p className="text-small text-text-light">{card.label}</p>
-                        <p className="mt-2 text-2xl font-bold text-primary">{card.value}</p>
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="mt-4 rounded-3xl border border-dashed border-primary/20 bg-white p-4">
-                    <p className="text-small uppercase tracking-[0.18em] text-text-light">
-                      Live workflow
-                    </p>
-                    <div className="mt-4 space-y-3">
-                      {activePanel.features.slice(0, 3).map((feature) => (
-                        <div
-                          className="flex items-center justify-between rounded-2xl border border-border px-4 py-3"
-                          key={feature}
-                        >
-                          <span className="max-w-[16rem] text-sm text-text">{feature}</span>
-                          <span className="rounded-full bg-primary/8 px-3 py-1 text-xs font-semibold text-primary">
-                            Active
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex flex-col gap-4 rounded-3xl bg-primary p-5 text-white">
-                  <p className="text-small uppercase tracking-[0.18em] text-white/60">Snapshot</p>
-                  <p className="text-xl font-semibold">Purpose-built for pest control workflows</p>
-                  <div className="space-y-3">
-                    {[
-                      "Recurring schedules are visible before they slip.",
-                      "Job details, signatures, and service history stay attached.",
-                      "Team-wide updates stay in sync across office and field."
-                    ].map((line) => (
-                      <div className="rounded-2xl bg-white/10 px-4 py-3 text-sm text-white/84" key={line}>
-                        {line}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
+            <div className="relative overflow-hidden rounded-[28px] border border-primary/10 bg-white shadow-xl">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={activePanel.screenshot}
+                alt={activePanel.screenshotAlt}
+                className="block w-full h-auto"
+                width={1920}
+                height={1080}
+              />
             </div>
           </div>
         </div>
