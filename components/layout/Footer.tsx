@@ -1,12 +1,5 @@
-import { Facebook, Linkedin, Youtube } from "lucide-react";
 import Link from "next/link";
 import { footerLinks, legalLinks } from "@/lib/constants";
-
-const socialIcons = [
-  { href: "#", icon: Facebook, label: "Facebook" },
-  { href: "#", icon: Linkedin, label: "LinkedIn" },
-  { href: "#", icon: Youtube, label: "YouTube" }
-];
 
 export function Footer() {
   return (
@@ -51,21 +44,6 @@ export function Footer() {
               {legalLinks.map((link) => (
                 <Link className="rounded-md text-sm text-text hover:text-primary-light focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2" href={link.href} key={link.href}>
                   {link.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-          <div>
-            <h2 className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-text-light">Social</h2>
-            <div className="flex items-center gap-3">
-              {socialIcons.map(({ href, icon: Icon, label }) => (
-                <Link
-                  aria-label={label}
-                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-white text-primary transition hover:border-primary hover:bg-primary hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
-                  href={href}
-                  key={label}
-                >
-                  <Icon className="h-4 w-4" />
                 </Link>
               ))}
             </div>

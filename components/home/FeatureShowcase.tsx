@@ -1,7 +1,7 @@
 "use client";
 
 import clsx from "clsx";
-import { Building2, Check, MapPinned, Sparkles, Users } from "lucide-react";
+import { Building2, Check, MapPinned, Users } from "lucide-react";
 import { useState } from "react";
 
 const tabs = [
@@ -11,16 +11,17 @@ const tabs = [
     shortLabel: "Office",
     icon: Building2,
     eyebrow: "For the Office",
-    title: "Keep the front office ahead of the board, the phones, and the paperwork.",
+    title: "Run the front office without the chaos",
     description:
       "Office staff can schedule faster, see retreatment demand before it becomes a fire drill, and keep revenue moving without piecing together three different tools.",
     features: [
       "Drag-and-drop scheduling with recurring cycle templates",
-      "Customer CRM with treatment history and property notes",
-      "Automated invoicing and payment collection",
-      "Chemical inventory tracking and EPA compliance reports"
+      "Visual dispatch board with GPS check-ins and route optimization",
+      "Automated invoicing and online payment collection",
+      "Team management with role-based access for technicians",
+      "Chemical inventory tracking and EPA compliance reports",
+      "Revenue dashboards and billing status at a glance"
     ],
-    comingSoonIndices: [],
     screenshot: "/screenshots/dispatch.png",
     screenshotAlt: "PestPilot dispatch board with scheduled jobs, technician assignments, and route view"
   },
@@ -30,16 +31,17 @@ const tabs = [
     shortLabel: "Field",
     icon: MapPinned,
     eyebrow: "For Field Techs",
-    title: "Give techs everything they need in the truck, on site, and underground.",
+    title: "Everything your techs need — in the truck, on site, and in the crawl space",
     description:
-      "Technicians get a clean mobile workflow with route order, treatment details, application logging, and signature capture even when service happens in weak-signal zones.",
+      "Technicians get a clean mobile workflow with route order, treatment details, application logging, and signature capture — even when service happens in weak-signal zones.",
     features: [
       "Mobile job view with route order and GPS directions",
       "One-tap chemical application logging",
+      "GPS check-in at job sites with automatic status updates",
       "Capture signatures and site photos on completion",
+      "License tracking with expiry alerts",
       "Offline mode for crawl spaces, attics, and remote properties"
     ],
-    comingSoonIndices: [],
     screenshot: "/screenshots/technician-mobile-route.png",
     screenshotAlt: "PestPilot technician mobile route view with GPS directions and job details"
   },
@@ -49,16 +51,17 @@ const tabs = [
     shortLabel: "Customer",
     icon: Users,
     eyebrow: "For Customers",
-    title: "Make service feel modern without making your team do more admin.",
+    title: "Service that feels modern — without making your team do more admin",
     description:
-      "Customers can book online, pay online, and see their service history while reminders and digital reports keep the relationship active between visits.",
+      "Customers can book online, pay online, and see their service history — while reminders and digital reports keep the relationship active between visits.",
     features: [
-      "Online booking and self-service portal",
-      "Automated email reminders before treatments",
+      "Self-service customer portal with online booking",
+      "SMS and email appointment reminders",
       "Digital service reports with treatment details",
-      "One-click payments from invoice and reminder links"
+      "One-click payments from invoice and reminder links",
+      "Branded experience with your logo and colors",
+      "Online rescheduling without calling the office"
     ],
-    comingSoonIndices: [],
     screenshot: "/screenshots/customers.png",
     screenshotAlt: "PestPilot customer management with treatment history and property details"
   }
@@ -166,18 +169,12 @@ export function FeatureShowcase() {
             </p>
 
             <ul className="mt-6 space-y-4">
-              {activePanel.features.map((feature, idx) => (
+              {activePanel.features.map((feature) => (
                 <li className="flex items-start gap-3" key={feature}>
                   <span className="mt-1 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-success/15 text-success">
                     <Check className="h-4 w-4" />
                   </span>
                   <span className="text-base text-text">{feature}</span>
-                  {(activePanel.comingSoonIndices as readonly number[]).includes(idx) && (
-                    <span className="mt-0.5 inline-flex items-center gap-1 rounded-full bg-accent/10 px-2.5 py-0.5 text-xs font-semibold text-accent">
-                      <Sparkles className="h-3 w-3" />
-                      Coming soon
-                    </span>
-                  )}
                 </li>
               ))}
             </ul>

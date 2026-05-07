@@ -81,7 +81,7 @@ const sections = [
       {
         title: "Customer Portal",
         description: "Self-service portal where customers view appointments, pay invoices, reschedule, and message your team.",
-        href: "/features/invoicing",
+        href: "/features/customer-portal",
         icon: Globe,
         featured: true
       }

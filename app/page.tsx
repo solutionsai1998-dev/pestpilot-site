@@ -1,13 +1,9 @@
-import { ChemicalTracking } from "@/components/home/ChemicalTracking";
-import { Differentiator } from "@/components/home/Differentiator";
 import { FeatureShowcase } from "@/components/home/FeatureShowcase";
 import { FinalCTA } from "@/components/home/FinalCTA";
-import { FoundingMembers } from "@/components/home/FoundingMembers";
 import { Hero } from "@/components/home/Hero";
-import { PainPoints } from "@/components/home/PainPoints";
-import { PaperTransition } from "@/components/home/PaperTransition";
+import { OutcomeGrid } from "@/components/home/OutcomeGrid";
 import { PricingPreview } from "@/components/home/PricingPreview";
-import { RecurringCycles } from "@/components/home/RecurringCycles";
+import { ROIMetrics } from "@/components/home/ROIMetrics";
 import { SocialProofBar } from "@/components/home/SocialProofBar";
 import { Testimonials } from "@/components/home/Testimonials";
 
@@ -16,13 +12,9 @@ export default function HomePage() {
     <>
       <Hero />
       <SocialProofBar />
-      <PainPoints />
+      <OutcomeGrid />
       <FeatureShowcase />
-      <Differentiator />
-      <ChemicalTracking />
-      <RecurringCycles />
-      <PaperTransition />
-      <FoundingMembers />
+      <ROIMetrics />
       <Testimonials />
       <PricingPreview />
       <FinalCTA />
