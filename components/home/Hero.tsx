@@ -67,7 +67,7 @@ export function Hero() {
               </div>
             </div>
 
-            <div className="relative mx-auto w-full max-w-2xl lg:mx-0">
+            <div className="relative mx-auto w-full max-w-2xl pb-10 lg:mx-0 lg:pb-0">
               <div className="absolute -left-6 top-10 h-28 w-28 rounded-full bg-accent/20 blur-3xl" />
               <div className="absolute -right-10 bottom-8 h-32 w-32 rounded-full bg-emerald-300/20 blur-3xl" />
               <div className="relative rounded-[28px] border border-white/12 shadow-2xl overflow-hidden">
@@ -77,7 +77,17 @@ export function Hero() {
                   alt="PestPilot Command Center — dashboard overview with routes, jobs, and compliance"
                   className="w-full h-auto block"
                   width={1440}
-                  height={900}
+                  height={1000}
+                />
+              </div>
+              <div className="absolute -bottom-2 right-4 w-[26%] min-w-[7rem] max-w-[11rem] overflow-hidden rounded-[1.6rem] border border-white/18 bg-primary shadow-2xl md:-bottom-6 md:right-8">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/screenshots/mobile-preview.png"
+                  alt="PestPilot mobile technician route view"
+                  className="block h-auto w-full"
+                  width={780}
+                  height={1688}
                 />
               </div>
             </div>
