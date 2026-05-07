@@ -42,7 +42,7 @@ export function PricingToggle() {
           >
             Annual
             <span className="ml-2 rounded-full bg-accent/15 px-2 py-0.5 text-[11px] font-bold uppercase tracking-[0.14em] text-accent">
-              Save 2 months
+              Save $120/year
             </span>
           </button>
         </div>
@@ -50,7 +50,7 @@ export function PricingToggle() {
 
       <div
         aria-labelledby={billingCycle === "monthly" ? "pricing-tab-monthly" : "pricing-tab-annual"}
-        className="mt-10 grid gap-6 xl:grid-cols-3"
+        className="mx-auto mt-10 grid max-w-5xl gap-6 lg:grid-cols-2"
         id={billingCycle === "monthly" ? "pricing-panel-monthly" : "pricing-panel-annual"}
         role="tabpanel"
         tabIndex={0}
@@ -59,15 +59,17 @@ export function PricingToggle() {
           <TierCard
             badge={plan.badge}
             billingLabel={billingCycle === "monthly" ? "/mo" : "/mo billed annually"}
-            ctaLabel="Apply for Early Access"
+            ctaLabel="Start Free Trial"
             description={plan.description}
             features={plan.features}
             highlighted={plan.highlighted}
-            href="/early-access"
+            href="/pricing"
             key={`${billingCycle}-${plan.name}`}
             name={plan.name}
             price={plan.price}
-            regularPrice={"regularPrice" in plan ? plan.regularPrice : undefined}
+            regularPrice={"monthlyPrice" in plan ? plan.monthlyPrice : undefined}
+            savings={plan.savings}
+            seatInfo={plan.seatInfo}
           />
         ))}
       </div>

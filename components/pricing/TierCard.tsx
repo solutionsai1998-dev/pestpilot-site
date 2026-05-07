@@ -10,6 +10,8 @@ type TierCardProps = {
   billingLabel: string;
   description: string;
   features: readonly string[];
+  seatInfo?: string;
+  savings?: string;
   href?: string;
   ctaLabel?: string;
   highlighted?: boolean;
@@ -23,8 +25,10 @@ export function TierCard({
   billingLabel,
   description,
   features,
-  href = "/early-access",
-  ctaLabel = "Apply for Early Access",
+  seatInfo,
+  savings,
+  href = "/pricing",
+  ctaLabel = "Start Free Trial",
   highlighted = false,
   badge
 }: TierCardProps) {
@@ -52,6 +56,8 @@ export function TierCard({
         </div>
       </div>
       <p className="mt-3 min-h-[3rem] text-small text-text-light">{description}</p>
+      {seatInfo ? <p className="mt-4 rounded-2xl bg-bg-alt px-4 py-3 text-sm font-semibold text-primary">{seatInfo}</p> : null}
+      {savings ? <p className="mt-3 text-small font-semibold text-accent">{savings}</p> : null}
 
       <div className="mt-6 space-y-3">
         {features.map((feature) => (

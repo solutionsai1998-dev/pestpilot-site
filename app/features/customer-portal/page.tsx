@@ -35,7 +35,7 @@ const benefits = [
   },
   {
     title: "SMS & email reminders",
-    description: "Automated appointment reminders reduce no-shows and keep customers engaged (Professional+).",
+    description: "Automated appointment reminders reduce no-shows and keep customers engaged.",
     icon: MessageSquareText
   },
   {
@@ -68,7 +68,7 @@ export default function CustomerPortalPage() {
       <section className="section-padding bg-bg-alt">
         <div className="container">
           <div className="mx-auto max-w-4xl text-center">
-            <Badge>Customer Portal & SMS</Badge>
+            <Badge>Included on all plans</Badge>
             <h1 className="mt-5 text-h1-mobile font-extrabold tracking-tight text-primary md:text-h1-desktop">
               Let customers book, pay, and reschedule — without calling your office
             </h1>
@@ -178,9 +178,9 @@ export default function CustomerPortalPage() {
       <section className="section-padding bg-bg-alt">
         <div className="container">
           <div className="mx-auto max-w-4xl rounded-[32px] border border-success/20 bg-success/8 px-8 py-10 text-center shadow-sm">
-            <Badge className="border-success/25 bg-success/10 text-success">Portal available on all plans</Badge>
+            <Badge className="border-success/25 bg-success/10 text-success">Included on all plans</Badge>
             <p className="mt-4 text-small text-text-light">
-              SMS reminders are available on Professional and above.
+              Customer portal is included on every plan. SMS reminders are available on Professional.
             </p>
           </div>
         </div>

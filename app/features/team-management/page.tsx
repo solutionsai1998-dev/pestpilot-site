@@ -68,7 +68,7 @@ export default function TeamManagementPage() {
       <section className="section-padding bg-bg-alt">
         <div className="container">
           <div className="mx-auto max-w-4xl text-center">
-            <Badge>Team & Technician Management</Badge>
+            <Badge>Professional and above</Badge>
             <h1 className="mt-5 text-h1-mobile font-extrabold tracking-tight text-primary md:text-h1-desktop">
               Give your techs the tools to work independently — without losing visibility
             </h1>
@@ -171,9 +171,9 @@ export default function TeamManagementPage() {
       <section className="section-padding bg-bg-alt">
         <div className="container">
           <div className="mx-auto max-w-4xl rounded-[32px] border border-sky-200 bg-sky-50 px-8 py-10 text-center shadow-sm">
-            <Badge className="border-sky-200 bg-sky-100 text-sky-700">Available on Professional and above</Badge>
+            <Badge className="border-sky-200 bg-sky-100 text-sky-700">Professional and above</Badge>
             <p className="mt-4 text-small text-text-light">
-              Starter includes 1 user. Professional includes 5 users. Enterprise includes 10 users.
+              Starter includes up to 2 users. Professional includes 5 users, with additional seats at $19/mo each and no hard cap.
             </p>
           </div>
         </div>

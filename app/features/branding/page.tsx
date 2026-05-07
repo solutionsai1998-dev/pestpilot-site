@@ -67,7 +67,7 @@ export default function BrandingPage() {
       <section className="section-padding bg-bg-alt">
         <div className="container">
           <div className="mx-auto max-w-4xl text-center">
-            <Badge>Branding & White-Label</Badge>
+            <Badge>Included on all plans</Badge>
             <h1 className="mt-5 text-h1-mobile font-extrabold tracking-tight text-primary md:text-h1-desktop">
               Your brand, your way — on every invoice, portal, and customer touchpoint
             </h1>
@@ -170,9 +170,9 @@ export default function BrandingPage() {
       <section className="section-padding bg-bg-alt">
         <div className="container">
           <div className="mx-auto max-w-4xl rounded-[32px] border border-purple-200 bg-purple-50 px-8 py-10 text-center shadow-sm">
-            <Badge className="border-purple-200 bg-purple-100 text-purple-700">Enterprise only</Badge>
+            <Badge className="border-purple-200 bg-purple-100 text-purple-700">Included on all plans</Badge>
             <p className="mt-4 text-small text-text-light">
-              White-label branding is included on Enterprise plans.
+              Your brand on every invoice, portal, and report — included on every plan.
             </p>
           </div>
         </div>

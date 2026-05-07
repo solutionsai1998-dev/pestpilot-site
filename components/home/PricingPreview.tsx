@@ -13,11 +13,11 @@ export function PricingPreview() {
               Pricing Preview
             </p>
             <h2 className="mt-4 text-h2-mobile font-bold tracking-tight text-primary md:text-h2-desktop">
-              Simple pricing. No per-technician fees.
+              Simple pricing. Two plans, annual savings, and flexible seats.
             </h2>
             <p className="mt-4 text-body-mobile text-text-light md:text-body">
-              Clear starting prices, flat plans, and room to grow without hidden surprises when you
-              add routes or office staff.
+              Starter is $49/mo ($39/mo annual). Professional is $99/mo ($89/mo annual) with
+              5 users included and $19/mo seats after that.
             </p>
           </div>
 
@@ -30,7 +30,7 @@ export function PricingPreview() {
           </Link>
         </div>
 
-        <div className="mt-10 grid gap-6 xl:grid-cols-3">
+        <div className="mx-auto mt-10 grid max-w-5xl gap-6 lg:grid-cols-2">
           {pricingTiers.monthly.map((tier) => (
             <div
               className={`relative rounded-[28px] border p-7 shadow-sm transition-transform duration-200 ${
@@ -51,11 +51,10 @@ export function PricingPreview() {
               </p>
               <div className="mt-4">
                 <p className="text-4xl font-extrabold tracking-tight text-primary">{tier.price}/mo</p>
-                {"regularPrice" in tier ? (
-                  <p className="mt-1 text-small text-text-light line-through">normally {tier.regularPrice}/mo</p>
-                ) : null}
+                <p className="mt-1 text-small font-semibold text-accent">{tier.annualPrice}/mo annual</p>
               </div>
               <p className="mt-3 min-h-[3rem] text-small text-text-light">{tier.tagline}</p>
+              <p className="mt-4 rounded-2xl bg-bg-alt px-4 py-3 text-sm font-semibold text-primary">{tier.seatInfo}</p>
 
               <div className="mt-6 space-y-3">
                 {tier.features.map((feature) => (
@@ -78,7 +77,7 @@ export function PricingPreview() {
         </div>
 
         <p className="mt-8 text-center text-small text-text-light">
-          Apply for early access · Cancel anytime · Free data migration
+          Branding included on every plan · Cancel anytime · No contracts
         </p>
       </div>
     </section>

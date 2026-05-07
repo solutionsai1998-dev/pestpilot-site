@@ -61,7 +61,7 @@ export default function InvoicingPage() {
       <section className="section-padding bg-bg-alt">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
-            <Badge>Invoicing & Receivables · All plans</Badge>
+            <Badge>Included on all plans</Badge>
             <h1 className="mt-5 text-h1-mobile font-extrabold tracking-tight text-primary md:text-h1-desktop">
               Get paid on-site, every time
             </h1>
@@ -113,7 +113,7 @@ export default function InvoicingPage() {
         <div className="container">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
-              <Badge>Receivables Tracking · All plans</Badge>
+              <Badge>Included on all plans</Badge>
               <h2 className="mt-5 text-h2-mobile font-bold tracking-tight text-primary md:text-h2-desktop">
                 Know exactly who has paid and who needs a nudge.
               </h2>
@@ -173,7 +173,7 @@ export default function InvoicingPage() {
               completion and recurring service cycles, so collections stay aligned with how pest control work actually happens.
             </p>
             <div className="mt-8">
-              <Button href="/early-access">Apply for Early Access</Button>
+              <Button href="/pricing">Start Free Trial</Button>
             </div>
           </div>
         </div>

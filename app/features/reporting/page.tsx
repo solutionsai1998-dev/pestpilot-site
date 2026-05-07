@@ -61,7 +61,7 @@ export default function ReportingPage() {
       <section className="section-padding bg-bg-alt">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
-            <Badge>Reporting · Enterprise scorecards</Badge>
+            <Badge>Basic reports on all plans · Advanced reporting on Professional</Badge>
             <h1 className="mt-5 text-h1-mobile font-extrabold tracking-tight text-primary md:text-h1-desktop">
               Dashboards that show what actually matters
             </h1>
@@ -112,7 +112,7 @@ export default function ReportingPage() {
         <div className="container">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
-              <Badge>Technician Scorecards · Enterprise</Badge>
+              <Badge>Technician Scorecards · Professional</Badge>
               <h2 className="mt-5 text-h2-mobile font-bold tracking-tight text-primary md:text-h2-desktop">
                 Make performance reviews about facts, not gut feel.
               </h2>
@@ -168,7 +168,7 @@ export default function ReportingPage() {
               Unlike generic field service tools, PestPilot reports on the metrics pest control operators actually manage by, from recurring revenue health to chemical usage and callback pressure.
             </p>
             <div className="mt-8">
-              <Button href="/early-access">Apply for Early Access</Button>
+              <Button href="/pricing">Start Free Trial</Button>
             </div>
           </div>
         </div>

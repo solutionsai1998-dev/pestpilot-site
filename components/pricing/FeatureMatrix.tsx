@@ -12,8 +12,8 @@ export function FeatureMatrix() {
             Pick the plan that fits your route count and compliance needs.
           </h2>
           <p className="mt-4 text-body-mobile text-text-light md:text-body">
-            Every tier includes the pest-control core. Higher plans add deeper routing, reporting,
-            and compliance workflows as your team grows.
+            Every plan includes the pest-control core, customer portal, chemical tracking, recurring automation,
+            and your branding. Professional adds deeper routing, reporting, and integrations as your team grows.
           </p>
         </div>
 
@@ -27,7 +27,6 @@ export function FeatureMatrix() {
                   <th className="bg-accent px-6 py-4 text-small font-semibold uppercase tracking-[0.18em] text-white">
                     Professional
                   </th>
-                  <th className="px-6 py-4 text-small font-semibold uppercase tracking-[0.18em]">Enterprise</th>
                 </tr>
               </thead>
               <tbody>
@@ -36,7 +35,6 @@ export function FeatureMatrix() {
                     <td className="px-6 py-5 text-sm font-semibold text-primary">{row.feature}</td>
                     <td className="px-6 py-5 text-sm text-text">{row.starter}</td>
                     <td className="px-6 py-5 text-sm text-text">{row.professional}</td>
-                    <td className="px-6 py-5 text-sm text-text">{row.enterprise}</td>
                   </tr>
                 ))}
               </tbody>

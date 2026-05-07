@@ -61,7 +61,7 @@ export default function DispatchPage() {
       <section className="section-padding bg-bg-alt">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
-            <Badge>Dispatch</Badge>
+            <Badge>Included on all plans</Badge>
             <h1 className="mt-5 text-h1-mobile font-extrabold tracking-tight text-primary md:text-h1-desktop">
               Routes built for pest control density
             </h1>
@@ -140,7 +140,7 @@ export default function DispatchPage() {
               recurring treatment windows, and the reality that pest control dispatch changes by the hour.
             </p>
             <div className="mt-8">
-              <Button href="/early-access">Apply for Early Access</Button>
+              <Button href="/pricing">Start Free Trial</Button>
             </div>
           </div>
         </div>

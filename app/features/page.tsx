@@ -46,7 +46,7 @@ const sections = [
         href: "/features/team-management",
         screenshot: "/screenshots/team.png",
         alt: "PestPilot team management dashboard",
-        badge: "Professional+"
+        badge: "Professional"
       },
       {
         title: "Invoices sent fast, payments tracked clearly",
@@ -69,7 +69,7 @@ const sections = [
         href: "/features/chemical-tracking",
         screenshot: "/screenshots/chemicals.png",
         alt: "PestPilot chemical tracking dashboard",
-        badge: "Professional+"
+        badge: "Included on all plans"
       },
       {
         title: "Know what is working before callbacks pile up",
@@ -78,7 +78,7 @@ const sections = [
         href: "/features/reporting",
         screenshot: "/screenshots/reports.png",
         alt: "PestPilot reporting dashboard",
-        badge: "Enterprise"
+        badge: "Advanced on Professional"
       }
     ]
   },
@@ -93,7 +93,7 @@ const sections = [
         href: "/features/customer-portal",
         screenshot: "/screenshots/portal-login.png",
         alt: "PestPilot customer portal login screen",
-        badge: "Professional+ for SMS"
+        badge: "Portal all plans · SMS Professional"
       },
       {
         title: "A customer experience that looks like your company",
@@ -102,7 +102,7 @@ const sections = [
         href: "/features/branding",
         screenshot: "/screenshots/branding.png",
         alt: "PestPilot branding settings screen",
-        badge: "Enterprise"
+        badge: "Included on all plans"
       }
     ]
   }

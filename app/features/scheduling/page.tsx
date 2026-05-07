@@ -61,7 +61,7 @@ export default function SchedulingPage() {
       <section className="section-padding bg-bg-alt">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
-            <Badge>Scheduling · All plans</Badge>
+            <Badge>Included on all plans</Badge>
             <h1 className="mt-5 text-h1-mobile font-extrabold tracking-tight text-primary md:text-h1-desktop">
               Recurring pest cycles, handled automatically
             </h1>
@@ -167,7 +167,7 @@ export default function SchedulingPage() {
               seasonal timing, and the scheduling pressure that comes with route density in pest control.
             </p>
             <div className="mt-8">
-              <Button href="/early-access">Apply for Early Access</Button>
+              <Button href="/pricing">Start Free Trial</Button>
             </div>
           </div>
         </div>

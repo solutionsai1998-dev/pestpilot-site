@@ -16,12 +16,12 @@ export function FoundingMembers() {
             Become a Founding PestPilot
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-body-mobile text-text-light md:text-body">
-            Join our exclusive early adopter program and lock in $49/mo for life (normally $99/mo).
+            Start on Starter at $49/mo or save with annual billing at $39/mo.
             Help shape the product while getting the best deal we&apos;ll ever offer.
           </p>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button href="/early-access">
+            <Button href="/pricing">
               Claim Your Spot
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>

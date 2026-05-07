@@ -15,18 +15,18 @@ export function FinalCTA() {
               Ready to replace the paperwork with a sharper operating system?
             </h2>
             <p className="mt-4 text-body-mobile text-white/76 md:text-body">
-              Apply for early access, bring over your customer list, and launch with a pest-control
-              workflow built for recurring routes, compliance, and steady growth.
+              Start with the core PestPilot workflow and your brand included, then add Professional
+              visibility, integrations, and extra seats when your team is ready.
             </p>
 
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button className="min-w-[15rem]" href="/early-access">
-                Apply for Early Access
+              <Button className="min-w-[15rem]" href="/pricing">
+                Start Free Trial
               </Button>
             </div>
 
             <p className="mt-4 text-small text-white/68">
-              Founding-user rollout support · Setup in 15 minutes · No payment required to apply
+              Cancel anytime · No contracts · Branding included on every plan
             </p>
 
             <div className="mt-8 flex flex-col items-center justify-center gap-4 text-small font-medium text-white/84 sm:flex-row sm:gap-8">

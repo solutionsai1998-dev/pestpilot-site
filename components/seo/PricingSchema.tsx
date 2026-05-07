@@ -5,7 +5,7 @@ const schema = {
   "@type": "Product",
   name: "PestPilot",
   description:
-    "Flat-rate pest control software pricing with no per-technician fees, free migration, and built-in compliance workflows.",
+    "Two PestPilot plans for pest control teams: Starter at $49/mo and Professional at $99/mo, with branding included on every plan.",
   brand: {
     "@type": "Brand",
     name: "PestPilot"

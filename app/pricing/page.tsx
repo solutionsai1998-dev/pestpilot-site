@@ -8,14 +8,14 @@ import { PricingToggle } from "@/components/pricing/PricingToggle";
 export const metadata: Metadata = {
   title: "Pricing | PestPilot",
   description:
-    "Flat-rate pest control software pricing with no per-technician fees, free migration, and built-in compliance workflows.",
+    "Two PestPilot plans for pest control teams: Starter at $49/mo and Professional at $99/mo, with branding included on every plan.",
   alternates: {
     canonical: "https://pestpilot.com/pricing"
   },
   openGraph: {
     title: "Pricing | PestPilot",
     description:
-      "Flat-rate pest control software pricing with no per-technician fees, free migration, and built-in compliance workflows.",
+      "Two PestPilot plans for pest control teams: Starter at $49/mo and Professional at $99/mo, with branding included on every plan.",
     url: "https://pestpilot.com/pricing",
     type: "website"
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pricing | PestPilot",
     description:
-      "Flat-rate pest control software pricing with no per-technician fees, free migration, and built-in compliance workflows."
+      "Two PestPilot plans for pest control teams: Starter at $49/mo and Professional at $99/mo, with branding included on every plan."
   }
 };
 
@@ -32,18 +32,13 @@ export default function PricingPage() {
     <>
       <PricingSchema />
 
-      {/* Founding Member Banner */}
       <div className="border-b border-accent/20 bg-[linear-gradient(90deg,_#fff7ed_0%,_#fffaf2_50%,_#fff7ed_100%)]">
         <div className="container py-4 text-center">
           <p className="text-sm font-medium text-text">
             <span className="mr-1 inline-flex items-center rounded-full bg-accent px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide text-white">
-              Founding Deal
+              Branding included
             </span>{" "}
-            Early-access Starter is {" "}
-            <span className="font-bold text-accent">$49/mo</span> (normally $99/mo) — locked for life.{" "}
-            <a className="font-semibold text-primary underline underline-offset-2 transition hover:text-primary-light" href="/early-access">
-              Claim your spot →
-            </a>
+            Your brand on every invoice, portal, and report — included on every plan.
           </p>
         </div>
       </div>
@@ -55,14 +50,14 @@ export default function PricingPage() {
               Pricing
             </p>
             <h1 className="mt-4 text-h1-mobile font-extrabold tracking-tight text-primary md:text-h1-desktop">
-              Simple pricing. No per-technician fees.
+              Simple pricing. Two plans. No contracts.
             </h1>
             <p className="mt-4 text-body-mobile text-text-light md:text-body">
-              Built for pest control operators who want flat pricing, clean onboarding, and room to
-              grow without surprise seat costs.
+              Starter begins at $49/mo. Professional includes 5 users, with additional seats at
+              $19/mo each when your team grows.
             </p>
             <p className="mt-6 text-small font-medium text-text-light">
-              Early-access Starter: $49/mo locked for life · Free data migration · No payment to apply
+              Save $120/year with annual billing · Cancel anytime · No contracts
             </p>
           </div>
 
@@ -80,11 +75,11 @@ export default function PricingPage() {
               Ready to put your routes, compliance, and billing in one system?
             </h2>
             <p className="mt-4 text-body-mobile text-white/76 md:text-body">
-              Apply for early access and bring your customer list over without rebuilding your whole
-              operation from scratch.
+              Start with scheduling, dispatch, invoicing, payments, chemical tracking, customer portal,
+              recurring automation, and your brand included from day one.
             </p>
             <div className="mt-8 flex justify-center">
-              <Button href="/early-access">Apply for Early Access</Button>
+              <Button href="/pricing">Start Free Trial</Button>
             </div>
           </div>
         </div>

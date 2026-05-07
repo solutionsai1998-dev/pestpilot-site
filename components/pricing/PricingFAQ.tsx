@@ -4,7 +4,7 @@ const faqs = [
   {
     question: "Do you charge per technician?",
     answer:
-      "No. PestPilot uses flat monthly pricing by plan. Starter includes 1 user, Professional includes up to 10, and Enterprise includes unlimited users without per-technician add-on fees."
+      "Starter includes up to 2 users. Professional includes 5 users, and additional Professional seats are $19/mo each with no hard cap."
   },
   {
     question: "Can you help migrate data from my current software?",
@@ -14,12 +14,17 @@ const faqs = [
   {
     question: "Is chemical tracking included on every plan?",
     answer:
-      "Every plan includes essential chemical application logs. Professional adds full inventory controls and one-click EPA reports; Enterprise adds custom exports and deeper compliance workflows."
+      "Yes. Chemical tracking is included on both Starter and Professional, alongside the customer portal, recurring automation, and branding."
   },
   {
     question: "Can I switch plans later?",
     answer:
       "Absolutely. Upgrade as your route volume grows, or move down if your needs change. Your data stays intact either way."
+  },
+  {
+    question: "Are there contracts?",
+    answer:
+      "No. You can cancel anytime, and there are no long-term contracts. Annual billing is optional if you want the lower monthly rate."
   }
 ];
 
