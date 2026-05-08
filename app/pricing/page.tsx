@@ -88,7 +88,7 @@ export default function PricingPage() {
                     <li>• Delivered within 5 business days</li>
                   </ul>
                 </div>
-                <Button href="mailto:founders@pestpilot.app?subject=Data%20Migration%20Add-on" variant="secondary">Contact Us</Button>
+                <Button href="mailto:hello@pestpilot.io?subject=Data%20Migration%20Add-on" variant="secondary">Contact Us</Button>
               </div>
             </div>
           </div>
