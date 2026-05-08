@@ -23,7 +23,7 @@ export function Hero() {
             <div className="max-w-2xl">
               <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/8 px-4 py-2 text-small font-medium text-white/90 shadow-sm backdrop-blur">
                 <Sparkles className="h-4 w-4 text-accent" />
-                Built for founding pest control operators
+                Built for pest control operators who want a better way to work
               </div>
               <h1 className="mt-6 text-h1-mobile font-extrabold tracking-tight text-white md:text-h1-desktop">
                 Stop drowning in paperwork. Start growing your pest control business.

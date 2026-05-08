@@ -6,7 +6,6 @@ import { Card } from "@/components/shared/Card";
 type TierCardProps = {
   name: string;
   price: string;
-  regularPrice?: string;
   billingLabel: string;
   description: string;
   features: readonly string[];
@@ -21,7 +20,6 @@ type TierCardProps = {
 export function TierCard({
   name,
   price,
-  regularPrice,
   billingLabel,
   description,
   features,
@@ -52,7 +50,6 @@ export function TierCard({
         <p className="text-4xl font-extrabold tracking-tight text-primary">{price}</p>
         <div className="pb-1 text-small text-text-light">
           <p>{billingLabel}</p>
-          {regularPrice ? <p className="mt-1 line-through opacity-70">normally {regularPrice}/mo</p> : null}
         </div>
       </div>
       <p className="mt-3 min-h-[3rem] text-small text-text-light">{description}</p>

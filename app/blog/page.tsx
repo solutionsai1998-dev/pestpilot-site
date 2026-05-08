@@ -163,7 +163,7 @@ export default function BlogPage() {
               Want to see these workflows in action?
             </h2>
             <div className="mt-8">
-              <Button href="/early-access">Apply for Early Access</Button>
+              <Button href="/pricing">Start Free Trial</Button>
             </div>
           </div>
         </div>

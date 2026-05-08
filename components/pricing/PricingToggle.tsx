@@ -67,7 +67,6 @@ export function PricingToggle() {
             key={`${billingCycle}-${plan.name}`}
             name={plan.name}
             price={plan.price}
-            regularPrice={"monthlyPrice" in plan ? plan.monthlyPrice : undefined}
             savings={plan.savings}
             seatInfo={plan.seatInfo}
           />

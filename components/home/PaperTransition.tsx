@@ -5,8 +5,8 @@ const steps = [
   {
     number: "01",
     icon: NotebookTabs,
-    title: "Apply for early access",
-    detail: "15 minutes. No tech degree required."
+    title: "Start your free trial",
+    detail: "14 days. No credit card required."
   },
   {
     number: "02",
@@ -43,18 +43,16 @@ export function PaperTransition() {
 
               <div className="mt-8 rounded-[24px] border border-accent/20 bg-white/90 p-6 shadow-sm">
                 <p className="text-small font-semibold uppercase tracking-[0.2em] text-accent">
-                  Free data migration
+                  Data migration add-on
                 </p>
                 <p className="mt-3 text-base text-text-light">
-                  Every customer gets help moving customer lists, active schedules, and treatment
-                  history into PestPilot. We do the cleanup so your office team can stay focused on
-                  the phones and the board.
+                  Need help switching from another tool? We can import your customer lists, service history, and chemical inventory for a one-time setup fee.
                 </p>
               </div>
 
               <div className="mt-8">
-                <Button href="/early-access">
-                  Apply for early access — we&apos;ll help you move
+                <Button href="/pricing">
+                  Start Free Trial — we&apos;ll help you move
                 </Button>
               </div>
             </div>

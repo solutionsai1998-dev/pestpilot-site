@@ -69,7 +69,7 @@ export function PricingPreview() {
 
               <div className="mt-8">
                 <Button className="w-full justify-center" href="/pricing" variant={tier.highlighted ? "primary" : "secondary"}>
-                  See plan
+                  Start Free Trial
                 </Button>
               </div>
             </div>
@@ -77,7 +77,7 @@ export function PricingPreview() {
         </div>
 
         <p className="mt-8 text-center text-small text-text-light">
-          Branding included on every plan · Cancel anytime · No contracts
+          14-day free trial · Launch pricing guaranteed through 2026 · Cancel anytime
         </p>
       </div>
     </section>

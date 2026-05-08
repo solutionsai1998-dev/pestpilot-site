@@ -54,10 +54,10 @@ export default function PricingPage() {
             </h1>
             <p className="mt-4 text-body-mobile text-text-light md:text-body">
               Starter begins at $49/mo with 2 users included. Professional includes 5 users. Both plans add seats at
-              $19/mo each when your team grows.
+              $19/mo each when your team grows. Start with a 14-day free trial. No credit card required.
             </p>
             <p className="mt-6 text-small font-medium text-text-light">
-              Save $120/year with annual billing · Cancel anytime · No contracts
+              Launch pricing guaranteed through 2026 · Save $120/year with annual billing · Cancel anytime · No contracts
             </p>
           </div>
 
@@ -66,6 +66,35 @@ export default function PricingPage() {
       </section>
 
       <FeatureMatrix />
+
+      <section className="section-padding bg-bg-alt">
+        <div className="container">
+          <div className="mx-auto max-w-4xl rounded-[32px] border border-primary/10 bg-white p-8 shadow-card md:p-10">
+            <p className="text-small font-semibold uppercase tracking-[0.24em] text-accent">Switching help</p>
+            <h2 className="mt-4 text-h2-mobile font-bold tracking-tight text-primary md:text-h2-desktop">
+              Need help switching from another tool?
+            </h2>
+            <p className="mt-4 text-body-mobile text-text-light md:text-body">
+              We&apos;ll import your customer list, service history, and chemical inventory for you.
+            </p>
+            <div className="mt-8 rounded-[24px] border border-border bg-bg-alt p-6">
+              <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+                <div>
+                  <h3 className="text-h3-mobile font-semibold text-primary md:text-h3-desktop">Data Migration Add-on — $199 one-time</h3>
+                  <ul className="mt-5 grid gap-3 text-small text-text-light md:grid-cols-2">
+                    <li>• Import customers, properties, and service history</li>
+                    <li>• Import chemical product inventory</li>
+                    <li>• Import technician records</li>
+                    <li>• Delivered within 5 business days</li>
+                  </ul>
+                </div>
+                <Button href="mailto:founders@pestpilot.app?subject=Data%20Migration%20Add-on" variant="secondary">Contact Us</Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <PricingFAQ />
 
       <section className="section-padding bg-primary text-text-on-dark">

@@ -194,7 +194,7 @@ export default function AboutPage() {
               Ready to see what pest-control-specific software looks like?
             </h2>
             <div className="mt-8">
-              <Button href="/early-access">Apply for Early Access</Button>
+              <Button href="/pricing">Start Free Trial</Button>
             </div>
           </div>
         </div>

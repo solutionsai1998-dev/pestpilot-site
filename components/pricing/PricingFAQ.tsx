@@ -2,6 +2,16 @@ import { Card } from "@/components/shared/Card";
 
 const faqs = [
   {
+    question: "Is there a free trial?",
+    answer:
+      "Yes — 14 days, full Professional features, no credit card required. After the trial, choose Starter or Professional to keep using PestPilot."
+  },
+  {
+    question: "Is launch pricing guaranteed?",
+    answer:
+      "Yes. Launch pricing is guaranteed through 2026. No contracts, cancel anytime."
+  },
+  {
     question: "Do you charge per technician?",
     answer:
       "Starter includes 2 users and Professional includes 5 users. Additional seats are $19/mo each on both plans with no hard cap."
@@ -9,7 +19,7 @@ const faqs = [
   {
     question: "Can you help migrate data from my current software?",
     answer:
-      "Yes. We include free data migration for customer records, service history, and recurring schedules during onboarding."
+      "Yes. The Data Migration Add-on is $199 one-time and includes customers, properties, service history, chemical product inventory, and technician records, delivered within 5 business days."
   },
   {
     question: "Is chemical tracking included on every plan?",
