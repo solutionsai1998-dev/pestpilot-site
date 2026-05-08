@@ -16,8 +16,8 @@ export function PricingPreview() {
               Simple pricing. Two plans, annual savings, and flexible seats.
             </h2>
             <p className="mt-4 text-body-mobile text-text-light md:text-body">
-              Starter is $49/mo ($39/mo annual). Professional is $99/mo ($89/mo annual) with
-              5 users included and $19/mo seats after that.
+              Starter is $49/mo ($39/mo annual) with 2 users included. Professional is $99/mo ($89/mo annual) with
+              5 users included. Both plans add $19/mo seats after that.
             </p>
           </div>
 

@@ -7,10 +7,10 @@ export const pricingTiers = {
       schemaPrice: "49",
       description: "For solo operators and small teams ready to replace spreadsheets with real software",
       tagline: "For solo operators and small teams",
-      seatInfo: "Up to 2 users",
+      seatInfo: "2 users included · $19/mo per additional user",
       savings: "Save $120/year with annual billing",
       features: [
-        "Up to 2 users",
+        "2 users included, $19/mo per additional user",
         "Scheduling, dispatch, CRM, invoicing, and payments",
         "Chemical tracking, customer portal, and recurring automation",
         "Your brand on every invoice, portal, and report",
@@ -47,10 +47,10 @@ export const pricingTiers = {
       schemaPrice: "39",
       description: "For solo operators and small teams ready to replace spreadsheets with real software",
       tagline: "For solo operators and small teams",
-      seatInfo: "Up to 2 users",
+      seatInfo: "2 users included · $19/mo per additional user",
       savings: "Save $120/year with annual billing",
       features: [
-        "Up to 2 users",
+        "2 users included, $19/mo per additional user",
         "Scheduling, dispatch, CRM, invoicing, and payments",
         "Chemical tracking, customer portal, and recurring automation",
         "Your brand on every invoice, portal, and report",
@@ -82,7 +82,7 @@ export const pricingTiers = {
 } as const;
 
 export const featureRows = [
-  { feature: "Users included", starter: "Up to 2", professional: "5 included, +$19/mo per additional user" },
+  { feature: "Users included", starter: "2 included, +$19/mo per additional user", professional: "5 included, +$19/mo per additional user" },
   { feature: "Scheduling", starter: "Included", professional: "Included" },
   { feature: "Dispatch", starter: "Included", professional: "Included" },
   { feature: "Customers / CRM", starter: "Included", professional: "Included" },

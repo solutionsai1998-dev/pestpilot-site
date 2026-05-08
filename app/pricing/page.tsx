@@ -53,7 +53,7 @@ export default function PricingPage() {
               Simple pricing. Two plans. No contracts.
             </h1>
             <p className="mt-4 text-body-mobile text-text-light md:text-body">
-              Starter begins at $49/mo. Professional includes 5 users, with additional seats at
+              Starter begins at $49/mo with 2 users included. Professional includes 5 users. Both plans add seats at
               $19/mo each when your team grows.
             </p>
             <p className="mt-6 text-small font-medium text-text-light">

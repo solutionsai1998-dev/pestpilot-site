@@ -4,7 +4,7 @@ const faqs = [
   {
     question: "Do you charge per technician?",
     answer:
-      "Starter includes up to 2 users. Professional includes 5 users, and additional Professional seats are $19/mo each with no hard cap."
+      "Starter includes 2 users and Professional includes 5 users. Additional seats are $19/mo each on both plans with no hard cap."
   },
   {
     question: "Can you help migrate data from my current software?",
