@@ -76,7 +76,7 @@ export default function DemoPage() {
                 </div>
               </div>
 
-              <form action="#" className="mt-8 space-y-6" method="POST">
+              <form className="mt-8 space-y-6" id="demo-form">
                 <div className="grid gap-6 md:grid-cols-2">
                   <label className="block text-sm font-medium text-primary">
                     Full Name
@@ -129,12 +129,51 @@ export default function DemoPage() {
                 </div>
 
                 <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
-                  <Button type="submit">Request Demo</Button>
-                  <p className="text-small text-text-light">
+                  <Button type="submit" id="demo-submit-btn">Request Demo</Button>
+                  <p className="text-small text-text-light" id="demo-status">
                     We&apos;ll respond within 1 business day. No spam, ever.
                   </p>
                 </div>
               </form>
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `
+                    document.getElementById('demo-form').addEventListener('submit', async function(e) {
+                      e.preventDefault();
+                      const btn = document.getElementById('demo-submit-btn');
+                      const status = document.getElementById('demo-status');
+                      const form = e.target;
+                      const data = {
+                        fullName: form.fullName.value,
+                        companyName: form.companyName.value,
+                        email: form.email.value,
+                        phone: form.phone.value,
+                        technicians: form.technicians.value,
+                        software: form.software.value
+                      };
+                      btn.textContent = 'Sending...';
+                      btn.disabled = true;
+                      try {
+                        const res = await fetch('/api/demo', {
+                          method: 'POST',
+                          headers: { 'Content-Type': 'application/json' },
+                          body: JSON.stringify(data)
+                        });
+                        if (res.ok) {
+                          status.textContent = 'Request sent! We\'ll be in touch soon.';
+                          form.reset();
+                        } else {
+                          status.textContent = 'Something went wrong. Please email hello@pestpilot.io.';
+                        }
+                      } catch {
+                        status.textContent = 'Something went wrong. Please email hello@pestpilot.io.';
+                      }
+                      btn.textContent = 'Request Demo';
+                      btn.disabled = false;
+                    });
+                  `
+                }}
+              />
             </Card>
 
             <div className="space-y-6">
