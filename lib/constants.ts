@@ -17,7 +17,8 @@ export const footerLinks: NavItem[] = [
 
 export const legalLinks: NavItem[] = [
   { href: "/terms", label: "Terms" },
-  { href: "/privacy", label: "Privacy" }
+  { href: "/privacy", label: "Privacy" },
+  { href: "/cancellation", label: "Cancellation" }
 ];
 
 export const socialLinks = [
