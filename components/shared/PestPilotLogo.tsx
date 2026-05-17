@@ -23,7 +23,6 @@ export function PestPilotMark({
   width?: number;
 }) {
   const primary = inverse ? "#FFFFFF" : "#1B4332";
-  const centerline = inverse ? "#1B4332" : "#FFFFFF";
   const interior = inverse ? "transparent" : "#FFFFFF";
 
   return (
@@ -38,30 +37,29 @@ export function PestPilotMark({
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M32 5C24.4 10.4 17.2 12.5 10 14.2V33.6C10 50.2 25.9 61.8 32 65C38.1 61.8 54 50.2 54 33.6V14.2C46.8 12.5 39.6 10.4 32 5Z"
+        d="M32 5.5C24.8 10.3 18.1 12.4 11 14V33.2C11 48.4 25.4 59.4 32 63C38.6 59.4 53 48.4 53 33.2V14C45.9 12.4 39.2 10.3 32 5.5Z"
         fill={interior}
         stroke={primary}
         strokeLinejoin="round"
-        strokeWidth="4.2"
+        strokeWidth="4"
       />
       <path
-        d="M22 52C33.8 45.2 22 38.1 31 31.6C36.4 27.7 38.7 24.1 39.8 20.6"
+        d="M22 49C32.5 42.8 22.4 36.9 30.2 31.1C35.4 27.2 36.7 23.7 37.6 19.4"
         stroke={primary}
         strokeLinecap="round"
-        strokeWidth="10"
+        strokeWidth="8"
       />
       <path
-        d="M22 52C33.8 45.2 22 38.1 31 31.6C36.4 27.7 38.7 24.1 39.8 20.6"
-        stroke={centerline}
-        strokeDasharray="5 6"
+        d="M22.3 48.8C32.2 43 23 37.4 30.4 31.8"
+        stroke="#FFFFFF"
         strokeLinecap="round"
-        strokeWidth="2.4"
+        strokeWidth="2.2"
       />
       <path
-        d="M40 9.5C34.7 9.5 30.5 13.5 30.5 18.8C30.5 26.1 40 35 40 35C40 35 49.5 26.1 49.5 18.8C49.5 13.5 45.3 9.5 40 9.5Z"
+        d="M39 9.5C34.2 9.5 30.4 13.2 30.4 18C30.4 24.5 39 32.8 39 32.8C39 32.8 47.6 24.5 47.6 18C47.6 13.2 43.8 9.5 39 9.5Z"
         fill="#F77F00"
       />
-      <circle cx="40" cy="18.7" fill="#FFFFFF" r="3.7" />
+      <circle cx="39" cy="18" fill="#FFFFFF" r="3.4" />
     </svg>
   );
 }
@@ -78,12 +76,7 @@ export function PestPilotLogo({
 }: PestPilotLogoProps) {
   return (
     <span className={clsx("inline-flex items-center gap-2.5", className)}>
-      <PestPilotMark
-        className={clsx("shrink-0", markClassName)}
-        height={markHeight}
-        inverse={inverse}
-        width={markWidth}
-      />
+      <PestPilotMark className={clsx("shrink-0", markClassName)} height={markHeight} inverse={inverse} width={markWidth} />
       {showWordmark ? (
         <span
           className={clsx(
