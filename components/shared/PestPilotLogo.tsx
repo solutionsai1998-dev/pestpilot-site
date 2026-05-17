@@ -4,16 +4,23 @@ type PestPilotLogoProps = {
   className?: string;
   inverse?: boolean;
   markClassName?: string;
+  markHeight?: number;
+  markWidth?: number;
   showWordmark?: boolean;
+  wordmarkSize?: number;
   wordmarkClassName?: string;
 };
 
 export function PestPilotMark({
   className,
+  height = 36,
   inverse = false,
+  width = 32,
 }: {
   className?: string;
+  height?: number;
   inverse?: boolean;
+  width?: number;
 }) {
   const primary = inverse ? "#FFFFFF" : "#1B4332";
   const centerline = inverse ? "#1B4332" : "#FFFFFF";
@@ -24,7 +31,10 @@ export function PestPilotMark({
       aria-hidden="true"
       className={className}
       fill="none"
+      height={height}
+      style={{ display: "block", flex: "0 0 auto", height, width }}
       viewBox="0 0 64 72"
+      width={width}
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -60,19 +70,28 @@ export function PestPilotLogo({
   className,
   inverse = false,
   markClassName,
+  markHeight = 36,
+  markWidth = 32,
   showWordmark = true,
+  wordmarkSize = 24,
   wordmarkClassName,
 }: PestPilotLogoProps) {
   return (
     <span className={clsx("inline-flex items-center gap-2.5", className)}>
-      <PestPilotMark className={clsx("h-9 w-8 shrink-0", markClassName)} inverse={inverse} />
+      <PestPilotMark
+        className={clsx("shrink-0", markClassName)}
+        height={markHeight}
+        inverse={inverse}
+        width={markWidth}
+      />
       {showWordmark ? (
         <span
           className={clsx(
-            "text-2xl font-extrabold leading-none",
+            "font-extrabold leading-none",
             inverse ? "text-white" : "text-text",
             wordmarkClassName,
           )}
+          style={{ fontSize: wordmarkSize }}
         >
           <span className={inverse ? "text-white" : "text-primary"}>Pest</span>Pilot
         </span>
