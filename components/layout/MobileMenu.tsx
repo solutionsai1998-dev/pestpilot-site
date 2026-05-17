@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { Button } from "@/components/shared/Button";
+import { PestPilotLogo } from "@/components/shared/PestPilotLogo";
 import { navLinks } from "@/lib/constants";
 
 export function MobileMenu() {
@@ -40,8 +41,8 @@ export function MobileMenu() {
         id="mobile-nav-drawer"
       >
         <div className="flex items-center justify-between">
-          <Link className="rounded-md text-xl font-extrabold text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2" href="/" onClick={() => setIsOpen(false)}>
-            PestPilot
+          <Link className="rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2" href="/" onClick={() => setIsOpen(false)}>
+            <PestPilotLogo markClassName="h-8 w-7" wordmarkClassName="text-xl" />
           </Link>
           <button
             aria-label="Close navigation menu"
