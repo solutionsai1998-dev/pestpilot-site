@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/"
     },
-    sitemap: "https://pestpilot.com/sitemap.xml"
+    sitemap: "https://pestpilot.app/sitemap.xml"
   };
 }

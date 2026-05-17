@@ -117,7 +117,7 @@ ctx.fillText("Scheduling  ·  Dispatch  ·  Invoicing  ·  EPA Compliance", W / 
 ctx.textAlign = "right";
 ctx.font = "20px system-ui, -apple-system, sans-serif";
 ctx.fillStyle = "rgba(255,255,255,0.30)";
-ctx.fillText("pestpilot.com", W - 48, H - 36);
+ctx.fillText("pestpilot.app", W - 48, H - 36);
 
 const buf = canvas.toBuffer("image/png");
 writeFileSync(outputPath, buf);

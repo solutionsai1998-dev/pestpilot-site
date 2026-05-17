@@ -19,18 +19,18 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://pestpilot.com"),
+  metadataBase: new URL("https://pestpilot.app"),
   title: "PestPilot — Pest Control Software Built for Your Business",
   description:
     "Scheduling, dispatch, invoicing, and EPA compliance — all in one. Built exclusively for pest control operators.",
   alternates: {
-    canonical: "https://pestpilot.com"
+    canonical: "https://pestpilot.app"
   },
   openGraph: {
     title: "PestPilot",
     description:
       "Scheduling, dispatch, invoicing, and EPA compliance — all in one. Built exclusively for pest control operators.",
-    url: "https://pestpilot.com",
+    url: "https://pestpilot.app",
     siteName: "PestPilot",
     type: "website"
     // Note: public/og-image.png should be optimized to 1200x630 for ideal social sharing.

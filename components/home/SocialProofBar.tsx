@@ -1,7 +1,7 @@
 const logos = ["Route-ready workflows", "EPA-friendly records", "Recurring service plans", "Mobile field updates"];
 
 const stats = [
-  "Trusted by pest control operators nationwide",
+  "Built for pest control operators nationwide",
   "Built for solo operators and small teams",
   "Direct product feedback with the builder"
 ];

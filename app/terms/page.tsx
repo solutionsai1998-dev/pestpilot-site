@@ -24,7 +24,7 @@ const sections = [
     title: "User Accounts",
     paragraphs: [
       "You are responsible for maintaining the confidentiality of your account credentials and for all activity that occurs under your account. You agree to provide accurate information and to keep that information current.",
-      "You must promptly notify PestPilot at hello@pestpilot.io if you believe your account has been compromised or used without authorization."
+      "You must promptly notify PestPilot at hello@pestpilot.app if you believe your account has been compromised or used without authorization."
     ]
   },
   {
@@ -66,13 +66,13 @@ const sections = [
     title: "Termination",
     paragraphs: [
       "You may stop using the Service at any time, subject to any subscription commitments or cancellation procedures that apply to your plan. PestPilot may suspend or terminate access if you violate these Terms, fail to pay fees when due, or create legal, security, or operational risk.",
-      "Upon termination, your right to use the Service will cease, though provisions that by their nature should survive termination will remain in effect. Data retention and export timing should be finalized in production terms."
+      "Upon termination, your right to use the Service will cease, though provisions that by their nature should survive termination will remain in effect. Data retention and export availability are described in the Cancellation & Refund Policy."
     ]
   },
   {
     title: "Contact",
     paragraphs: [
-      "If you have questions about these Terms of Service, please contact PestPilot at hello@pestpilot.io."
+      "If you have questions about these Terms of Service, please contact PestPilot at hello@pestpilot.app."
     ]
   }
 ] as const;

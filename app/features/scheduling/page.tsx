@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Automate recurring pest cycles, customer reminders, and conflict-free scheduling with PestPilot.",
   alternates: {
-    canonical: "https://pestpilot.com/features/scheduling"
+    canonical: "https://pestpilot.app/features/scheduling"
   },
   openGraph: {
     title: "Scheduling Software for Pest Control | PestPilot",
     description:
       "Automate recurring pest cycles, customer reminders, and conflict-free scheduling with PestPilot.",
-    url: "https://pestpilot.com/features/scheduling",
+    url: "https://pestpilot.app/features/scheduling",
     type: "website"
   },
   twitter: {

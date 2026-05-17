@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Book a PestPilot demo and see how scheduling, dispatch, invoicing, and compliance workflows work for pest control companies.",
   alternates: {
-    canonical: "https://pestpilot.com/demo"
+    canonical: "https://pestpilot.app/demo"
   },
   openGraph: {
     title: "Book a Demo | PestPilot",
     description:
       "Book a PestPilot demo and see how scheduling, dispatch, invoicing, and compliance workflows work for pest control companies.",
-    url: "https://pestpilot.com/demo",
+    url: "https://pestpilot.app/demo",
     type: "website"
   },
   twitter: {
@@ -163,10 +163,10 @@ export default function DemoPage() {
                           status.textContent = 'Request sent! We\'ll be in touch soon.';
                           form.reset();
                         } else {
-                          status.textContent = 'Something went wrong. Please email hello@pestpilot.io.';
+                          status.textContent = 'Something went wrong. Please email hello@pestpilot.app.';
                         }
                       } catch {
-                        status.textContent = 'Something went wrong. Please email hello@pestpilot.io.';
+                        status.textContent = 'Something went wrong. Please email hello@pestpilot.app.';
                       }
                       btn.textContent = 'Request Demo';
                       btn.disabled = false;

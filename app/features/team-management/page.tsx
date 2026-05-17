@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   description:
     "Manage technician accounts, role-based access, mobile routes, GPS check-ins, and license tracking in PestPilot.",
   alternates: {
-    canonical: "https://pestpilot.com/features/team-management"
+    canonical: "https://pestpilot.app/features/team-management"
   },
   openGraph: {
     title: "Team & Technician Management | PestPilot",
     description:
       "Manage technician accounts, role-based access, mobile routes, GPS check-ins, and license tracking in PestPilot.",
-    url: "https://pestpilot.com/features/team-management",
+    url: "https://pestpilot.app/features/team-management",
     type: "website"
   },
   twitter: {

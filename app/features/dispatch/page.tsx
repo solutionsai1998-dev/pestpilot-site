@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Route jobs by territory, service type, and urgency with dispatch tools built for pest control operators.",
   alternates: {
-    canonical: "https://pestpilot.com/features/dispatch"
+    canonical: "https://pestpilot.app/features/dispatch"
   },
   openGraph: {
     title: "Dispatch Software for Pest Control | PestPilot",
     description:
       "Route jobs by territory, service type, and urgency with dispatch tools built for pest control operators.",
-    url: "https://pestpilot.com/features/dispatch",
+    url: "https://pestpilot.app/features/dispatch",
     type: "website"
   },
   twitter: {

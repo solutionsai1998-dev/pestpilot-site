@@ -16,21 +16,21 @@ const sections = [
   {
     title: "Refund Policy",
     paragraphs: [
-      "PestPilot offers a full refund within 14 days of your first paid subscription payment if you are not satisfied with the service. To request a refund within this window, contact us at hello@pestpilot.io with your account email and company name.",
+      "PestPilot offers a full refund within 14 days of your first paid subscription payment if you are not satisfied with the service. To request a refund within this window, contact us at hello@pestpilot.app with your account email and company name.",
       "After the 14-day window, subscription payments are non-refundable. You will retain access through the end of the billing period in which you cancel, but no prorated refund will be issued for the remaining days."
     ]
   },
   {
     title: "Annual Plans",
     paragraphs: [
-      "If PestPilot offers annual billing in the future, cancellations will follow the same end-of-period policy. Annual plans paid in advance are non-refundable after the 14-day window, but you will retain access for the full annual term."
+      "Annual billing follows the same end-of-period policy. Annual plans paid in advance are non-refundable after the 14-day window, but you will retain access for the full annual term."
     ]
   },
   {
     title: "Per-Seat Billing",
     paragraphs: [
       "If your plan includes per-seat billing, adding seats takes effect immediately and is charged on your next billing cycle. Removing seats takes effect at the end of the current billing period — you will not be charged for removed seats in the next cycle.",
-      "We do not prorata refunds for seat reductions mid-cycle."
+      "We do not prorate refunds for seat reductions mid-cycle."
     ]
   },
   {
@@ -49,13 +49,13 @@ const sections = [
   {
     title: "How to Cancel",
     paragraphs: [
-      "To cancel your subscription, log in to your PestPilot account, navigate to Billing, and use the Stripe billing portal to manage your subscription. You can also contact us at hello@pestpilot.io and we will process the cancellation within 2 business days."
+      "To cancel your subscription, log in to your PestPilot account, navigate to Billing, and use the Stripe billing portal to manage your subscription. You can also contact us at hello@pestpilot.app and we will process the cancellation within 2 business days."
     ]
   },
   {
     title: "Questions",
     paragraphs: [
-      "If you have questions about this policy or need help with a cancellation or refund, reach out to us at hello@pestpilot.io. We respond to all billing inquiries within 2 business days."
+      "If you have questions about this policy or need help with a cancellation or refund, reach out to us at hello@pestpilot.app. We respond to all billing inquiries within 2 business days."
     ]
   }
 ] as const;

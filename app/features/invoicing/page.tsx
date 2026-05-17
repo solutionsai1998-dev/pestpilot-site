@@ -7,22 +7,22 @@ import { Card } from "@/components/shared/Card";
 export const metadata: Metadata = {
   title: "Pest Control Invoicing Software | PestPilot",
   description:
-    "Generate invoices on completion, collect field payments, and automate recurring billing with PestPilot.",
+    "Generate invoices on completion, record field payments, and automate recurring billing with PestPilot.",
   alternates: {
-    canonical: "https://pestpilot.com/features/invoicing"
+    canonical: "https://pestpilot.app/features/invoicing"
   },
   openGraph: {
     title: "Pest Control Invoicing Software | PestPilot",
     description:
-      "Generate invoices on completion, collect field payments, and automate recurring billing with PestPilot.",
-    url: "https://pestpilot.com/features/invoicing",
+      "Generate invoices on completion, record field payments, and automate recurring billing with PestPilot.",
+    url: "https://pestpilot.app/features/invoicing",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
     title: "Pest Control Invoicing Software | PestPilot",
     description:
-      "Generate invoices on completion, collect field payments, and automate recurring billing with PestPilot."
+      "Generate invoices on completion, record field payments, and automate recurring billing with PestPilot."
   }
 };
 
@@ -39,7 +39,7 @@ const features = [
   },
   {
     title: "QuickBooks sync",
-    description: "Push invoices, payments, and customer data into QuickBooks to eliminate double entry.",
+    description: "On Professional, push invoices, payments, and customer data into QuickBooks to eliminate double entry.",
     icon: Receipt
   },
   {
@@ -63,11 +63,11 @@ export default function InvoicingPage() {
           <div className="mx-auto max-w-3xl text-center">
             <Badge>Included on all plans</Badge>
             <h1 className="mt-5 text-h1-mobile font-extrabold tracking-tight text-primary md:text-h1-desktop">
-              Get paid on-site, every time
+              Invoice faster after every visit
             </h1>
             <p className="mt-4 text-body-mobile text-text-light md:text-body">
-              Send invoices the moment a job is done. Collect payment in the field and sync
-              everything back to the office.
+              Send invoices the moment a job is done. Record field payments, let customers pay
+              online, and sync everything back to the office.
             </p>
           </div>
         </div>

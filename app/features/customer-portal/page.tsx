@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   description:
     "Give customers a self-service portal to book, pay, reschedule, and receive SMS reminders without calling your office.",
   alternates: {
-    canonical: "https://pestpilot.com/features/customer-portal"
+    canonical: "https://pestpilot.app/features/customer-portal"
   },
   openGraph: {
     title: "Customer Portal & SMS | PestPilot",
     description:
       "Give customers a self-service portal to book, pay, reschedule, and receive SMS reminders without calling your office.",
-    url: "https://pestpilot.com/features/customer-portal",
+    url: "https://pestpilot.app/features/customer-portal",
     type: "website"
   },
   twitter: {

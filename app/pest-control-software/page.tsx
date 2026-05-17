@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "PestPilot is pest control software built for scheduling, dispatch, invoicing, chemical tracking, and EPA compliance.",
   alternates: {
-    canonical: "https://pestpilot.com/pest-control-software"
+    canonical: "https://pestpilot.app/pest-control-software"
   },
   openGraph: {
     title: "Pest Control Software | PestPilot",
     description:
       "PestPilot is pest control software built for scheduling, dispatch, invoicing, chemical tracking, and EPA compliance.",
-    url: "https://pestpilot.com/pest-control-software",
+    url: "https://pestpilot.app/pest-control-software",
     type: "website"
   },
   twitter: {

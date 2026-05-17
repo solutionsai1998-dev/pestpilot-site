@@ -36,9 +36,9 @@ export function FinalCTA() {
               </Link>
               <a
                 className="inline-flex items-center gap-2 transition hover:text-white"
-                href="mailto:hello@pestpilot.io"
+                href="mailto:hello@pestpilot.app"
               >
-                hello@pestpilot.io
+                hello@pestpilot.app
               </a>
             </div>
           </div>

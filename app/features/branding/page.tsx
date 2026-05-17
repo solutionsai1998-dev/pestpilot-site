@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   description:
     "Customize PestPilot with your logo, brand colors, white-labeled customer portal, invoices, reports, emails, and SMS.",
   alternates: {
-    canonical: "https://pestpilot.com/features/branding"
+    canonical: "https://pestpilot.app/features/branding"
   },
   openGraph: {
     title: "Branding & White-Label | PestPilot",
     description:
       "Customize PestPilot with your logo, brand colors, white-labeled customer portal, invoices, reports, emails, and SMS.",
-    url: "https://pestpilot.com/features/branding",
+    url: "https://pestpilot.app/features/branding",
     type: "website"
   },
   twitter: {

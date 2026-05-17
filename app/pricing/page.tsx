@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   description:
     "Two PestPilot plans for pest control teams: Starter at $49/mo and Professional at $99/mo, with branding included on every plan.",
   alternates: {
-    canonical: "https://pestpilot.com/pricing"
+    canonical: "https://pestpilot.app/pricing"
   },
   openGraph: {
     title: "Pricing | PestPilot",
     description:
       "Two PestPilot plans for pest control teams: Starter at $49/mo and Professional at $99/mo, with branding included on every plan.",
-    url: "https://pestpilot.com/pricing",
+    url: "https://pestpilot.app/pricing",
     type: "website"
   },
   twitter: {
@@ -88,7 +88,7 @@ export default function PricingPage() {
                     <li>• Delivered within 5 business days</li>
                   </ul>
                 </div>
-                <Button href="mailto:hello@pestpilot.io?subject=Data%20Migration%20Add-on" variant="secondary">Contact Us</Button>
+                <Button href="mailto:hello@pestpilot.app?subject=Data%20Migration%20Add-on" variant="secondary">Contact Us</Button>
               </div>
             </div>
           </div>

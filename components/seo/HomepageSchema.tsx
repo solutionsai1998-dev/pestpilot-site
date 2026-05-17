@@ -8,10 +8,10 @@ const schema = {
     "Pest control software for scheduling, dispatch, invoicing, and EPA compliance.",
   offers: {
     "@type": "AggregateOffer",
-    lowPrice: "79",
-    highPrice: "299",
+    lowPrice: "49",
+    highPrice: "99",
     priceCurrency: "USD",
-    offerCount: 3
+    offerCount: 2
   }
 };
 

@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   description:
     "A practical look at building recurring service cycles that stay organized as your pest control business grows.",
   alternates: {
-    canonical: "https://pestpilot.com/blog/recurring-service-cycles"
+    canonical: "https://pestpilot.app/blog/recurring-service-cycles"
   },
   openGraph: {
     title: "How to Set Up Recurring Service Cycles Without Losing Track | PestPilot",
     description:
       "A practical look at building recurring service cycles that stay organized as your pest control business grows.",
-    url: "https://pestpilot.com/blog/recurring-service-cycles",
+    url: "https://pestpilot.app/blog/recurring-service-cycles",
     type: "website"
   },
   twitter: {
@@ -58,7 +58,7 @@ export default function BlogPostPage() {
         date="2026-04-21"
         description="A practical look at building recurring service cycles that stay organized as your pest control business grows."
         title="How to Set Up Recurring Service Cycles Without Losing Track | PestPilot"
-        url="https://pestpilot.com/blog/recurring-service-cycles"
+        url="https://pestpilot.app/blog/recurring-service-cycles"
       />
       <section className="section-padding bg-bg-alt">
         <div className="container">

@@ -30,14 +30,14 @@ const sections = [
   {
     title: "Data Security",
     paragraphs: [
-      "PestPilot intends to maintain administrative, technical, and physical safeguards designed to protect personal information from unauthorized access, disclosure, alteration, or destruction. No security measure is perfect, and this section should be tailored to actual security practices before launch.",
+      "PestPilot maintains administrative, technical, and physical safeguards designed to protect personal information from unauthorized access, disclosure, alteration, or destruction. No security measure is perfect, and we cannot guarantee absolute security.",
       "Users are responsible for maintaining the security of their credentials and for limiting access to accounts by authorized personnel only."
     ]
   },
   {
     title: "Data Retention",
     paragraphs: [
-      "We may retain information for as long as reasonably necessary to provide the Service, fulfill contractual obligations, resolve disputes, enforce agreements, and comply with legal or regulatory requirements. Exact retention schedules should be finalized in the production policy.",
+      "We may retain information for as long as reasonably necessary to provide the Service, fulfill contractual obligations, resolve disputes, enforce agreements, maintain backups, and comply with legal or regulatory requirements.",
       "When retention is no longer necessary, PestPilot will delete or de-identify information in accordance with applicable law and internal retention procedures."
     ]
   },
@@ -45,13 +45,13 @@ const sections = [
     title: "Your Rights",
     paragraphs: [
       "Depending on your location, you may have rights to access, correct, delete, or restrict certain personal information, and to object to or request portability of certain processing activities.",
-      "To exercise any applicable rights, contact PestPilot at hello@pestpilot.io. We may need to verify your identity before responding to your request."
+      "To exercise any applicable rights, contact PestPilot at hello@pestpilot.app. We may need to verify your identity before responding to your request."
     ]
   },
   {
     title: "Cookies",
     paragraphs: [
-      "We may use cookies and similar technologies to keep users signed in, remember preferences, analyze usage, and improve product performance. Specific cookie categories and controls should be described in the final version of this policy.",
+      "We may use cookies and similar technologies to keep users signed in, remember preferences, analyze usage, protect accounts, and improve product performance.",
       "You may be able to manage certain cookie settings through your browser or device, though disabling some cookies may affect Service functionality."
     ]
   },
@@ -77,7 +77,7 @@ const sections = [
   {
     title: "Contact Us",
     paragraphs: [
-      "If you have questions about this Privacy Policy or our privacy practices, please contact PestPilot at hello@pestpilot.io."
+      "If you have questions about this Privacy Policy or our privacy practices, please contact PestPilot at hello@pestpilot.app."
     ]
   }
 ] as const;

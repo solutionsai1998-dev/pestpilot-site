@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   description:
     "Read practical pest control operations, compliance, growth, and software guidance from PestPilot.",
   alternates: {
-    canonical: "https://pestpilot.com/blog"
+    canonical: "https://pestpilot.app/blog"
   },
   openGraph: {
     title: "Pest Control Blog | PestPilot",
     description:
       "Read practical pest control operations, compliance, growth, and software guidance from PestPilot.",
-    url: "https://pestpilot.com/blog",
+    url: "https://pestpilot.app/blog",
     type: "website"
   },
   twitter: {

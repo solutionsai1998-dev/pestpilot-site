@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Learn why PestPilot exists and how we're building software specifically for pest control operators, not generic field service businesses.",
   alternates: {
-    canonical: "https://pestpilot.com/about"
+    canonical: "https://pestpilot.app/about"
   },
   openGraph: {
     title: "About PestPilot | Built for Pest Control Operators",
     description:
       "Learn why PestPilot exists and how we're building software specifically for pest control operators, not generic field service businesses.",
-    url: "https://pestpilot.com/about",
+    url: "https://pestpilot.app/about",
     type: "website"
   },
   twitter: {
