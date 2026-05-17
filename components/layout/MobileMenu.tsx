@@ -42,7 +42,7 @@ export function MobileMenu() {
       >
         <div className="flex items-center justify-between">
           <Link className="rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2" href="/" onClick={() => setIsOpen(false)}>
-            <PestPilotLogo markHeight={32} markWidth={28} wordmarkSize={20} />
+            <PestPilotLogo markHeight={30} markWidth={27} wordmarkSize={21} />
           </Link>
           <button
             aria-label="Close navigation menu"
