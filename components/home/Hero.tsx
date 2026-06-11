@@ -32,8 +32,8 @@ export function Hero() {
                 PestPilot handles scheduling, dispatching, invoicing, and getting paid — so you can focus on the work that actually makes money.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-                <Button className="min-w-[12rem]" href="/pricing">
-                  Start Free Trial
+                <Button className="min-w-[12rem]" href="/demo">
+                  Book a Demo
                 </Button>
                 <Button
                   className="min-w-[11rem] border-white/20 bg-white/10 text-white hover:border-white hover:bg-white/14"

@@ -13,7 +13,7 @@ export function LaunchPricing() {
             Try every Professional feature for 14 days with no credit card required. No contracts, cancel anytime.
           </p>
           <div className="mt-8 flex justify-center">
-            <Button href="/pricing">Start Free Trial</Button>
+            <Button href="/demo">Book a Demo</Button>
           </div>
         </div>
       </div>

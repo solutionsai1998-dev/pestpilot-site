@@ -188,7 +188,7 @@ export default function ChemicalTrackingPage() {
               workflow, not an afterthought tacked on after scheduling and invoicing were already designed.
             </p>
             <div className="mt-8">
-              <Button href="/pricing">Start Free Trial</Button>
+              <Button href="/demo">Book a Demo</Button>
             </div>
           </div>
         </div>

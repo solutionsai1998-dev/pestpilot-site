@@ -140,7 +140,7 @@ export default function DispatchPage() {
               recurring treatment windows, and the reality that pest control dispatch changes by the hour.
             </p>
             <div className="mt-8">
-              <Button href="/pricing">Start Free Trial</Button>
+              <Button href="/demo">Book a Demo</Button>
             </div>
           </div>
         </div>

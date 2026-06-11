@@ -54,7 +54,8 @@ export default function PricingPage() {
             </h1>
             <p className="mt-4 text-body-mobile text-text-light md:text-body">
               Starter begins at $49/mo with 2 users included. Professional includes 5 users. Both plans add seats at
-              $19/mo each when your team grows. Start with a 14-day free trial. No credit card required.
+              $19/mo each when your team grows. Professional includes 500 SMS segments per month, with additional
+              segments billed at $0.04 each. Start with a 14-day free trial. No credit card required.
             </p>
             <p className="mt-6 text-small font-medium text-text-light">
               Launch pricing guaranteed through 2026 · Save $120/year with annual billing · Cancel anytime · No contracts
@@ -108,7 +109,7 @@ export default function PricingPage() {
               recurring automation, and your brand included from day one.
             </p>
             <div className="mt-8 flex justify-center">
-              <Button href="/pricing">Start Free Trial</Button>
+              <Button href="/demo">Book a Demo</Button>
             </div>
           </div>
         </div>

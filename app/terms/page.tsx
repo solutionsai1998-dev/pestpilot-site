@@ -46,7 +46,7 @@ const sections: Section[] = [
       "Professional plans include 500 SMS segments per month. Additional segments are billed at $0.04 per segment. SMS usage is measured per billing period and overages appear on your next invoice.",
       "Subscription fees are billed monthly in advance. SMS overages and other metered charges are billed in arrears. Payment is processed via credit card through our payment processor (Stripe, Inc.). By providing a payment method, you authorize us to charge all applicable fees.",
       "Accounts more than 30 days past due may be suspended. Accounts more than 60 days past due may be terminated. We will attempt to notify you before suspension or termination.",
-      "Fees are non-refundable for partial billing periods. If you cancel, your subscription remains active through the end of the current billing period. We do not offer refunds for unused SMS segments. We may offer free trial periods with no obligation to continue."
+      "Fees are non-refundable for partial billing periods except where required by law. If you cancel, your subscription remains active through the end of the current billing period. We do not offer refunds for unused SMS segments. We may offer free trial periods with no obligation to continue."
     ]
   },
   {
@@ -171,7 +171,7 @@ export default function TermsPage() {
               Terms of Service
             </h1>
             <p className="mt-4 text-small font-medium uppercase tracking-[0.18em] text-text-light">
-              Last updated: May 19, 2026
+              Last updated: June 11, 2026
             </p>
           </div>
 

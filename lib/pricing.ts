@@ -31,7 +31,8 @@ export const pricingTiers = {
       features: [
         "Everything in Starter",
         "5 users included, $19/mo per additional user",
-        "SMS reminders, license tracking, and QuickBooks sync",
+        "SMS reminders with 500 segments included; $0.04/segment overage",
+        "License tracking and QuickBooks sync",
         "Technician scorecards, callback tracking, and advanced reporting",
         "Advanced routing and priority support",
       ],
@@ -71,7 +72,8 @@ export const pricingTiers = {
       features: [
         "Everything in Starter",
         "5 users included, $19/mo per additional user",
-        "SMS reminders, license tracking, and QuickBooks sync",
+        "SMS reminders with 500 segments included; $0.04/segment overage",
+        "License tracking and QuickBooks sync",
         "Technician scorecards, callback tracking, and advanced reporting",
         "Advanced routing and priority support",
       ],
@@ -93,7 +95,7 @@ export const featureRows = [
   { feature: "Recurring automation", starter: "Included", professional: "Included" },
   { feature: "Branding: logo + colors", starter: "Included", professional: "Included" },
   { feature: "Reports", starter: "Basic reports", professional: "Advanced reporting" },
-  { feature: "SMS reminders", starter: "—", professional: "Included" },
+  { feature: "SMS reminders", starter: "—", professional: "500 segments included, then $0.04/segment" },
   { feature: "License tracking", starter: "—", professional: "Included" },
   { feature: "QuickBooks sync", starter: "—", professional: "Included" },
   { feature: "Technician scorecards", starter: "—", professional: "Included" },

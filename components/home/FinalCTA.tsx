@@ -20,8 +20,8 @@ export function FinalCTA() {
             </p>
 
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button className="min-w-[15rem]" href="/pricing">
-                Start Free Trial
+              <Button className="min-w-[15rem]" href="/demo">
+                Book a Demo
               </Button>
             </div>
 

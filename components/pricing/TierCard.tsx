@@ -25,8 +25,8 @@ export function TierCard({
   features,
   seatInfo,
   savings,
-  href = "/pricing",
-  ctaLabel = "Start Free Trial",
+  href = "/demo",
+  ctaLabel = "Book a Demo",
   highlighted = false,
   badge
 }: TierCardProps) {

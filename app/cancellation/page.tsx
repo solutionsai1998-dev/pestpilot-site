@@ -16,14 +16,14 @@ const sections = [
   {
     title: "Refund Policy",
     paragraphs: [
-      "PestPilot offers a full refund within 14 days of your first paid subscription payment if you are not satisfied with the service. To request a refund within this window, contact us at hello@pestpilot.app with your account email and company name.",
-      "After the 14-day window, subscription payments are non-refundable. You will retain access through the end of the billing period in which you cancel, but no prorated refund will be issued for the remaining days."
+      "PestPilot offers a 14-day free trial with no credit card required. Once a paid subscription begins, subscription fees are non-refundable for partial billing periods except where required by law.",
+      "If you cancel a paid subscription, you will retain access through the end of the billing period in which you cancel, but no prorated refund will be issued for the remaining days. We do not offer refunds for unused SMS segments."
     ]
   },
   {
     title: "Annual Plans",
     paragraphs: [
-      "Annual billing follows the same end-of-period policy. Annual plans paid in advance are non-refundable after the 14-day window, but you will retain access for the full annual term."
+      "Annual billing follows the same end-of-period policy. Annual plans paid in advance are non-refundable except where required by law, but you will retain access for the full annual term."
     ]
   },
   {
@@ -36,7 +36,7 @@ const sections = [
   {
     title: "Data After Cancellation",
     paragraphs: [
-      "After your subscription ends, your account data is retained for 30 days in case you decide to resubscribe. During this window, you can export your data by contacting support. After 30 days, your data will be permanently deleted from our systems.",
+      "After cancellation, you have 30 days to request a data export by contacting support. Your account data will be permanently deleted within 90 days of cancellation.",
       "Demo accounts and trial data may be deleted at any time without notice."
     ]
   },
@@ -70,7 +70,7 @@ export default function CancellationPage() {
               Cancellation & Refund Policy
             </h1>
             <p className="mt-4 text-small font-medium uppercase tracking-[0.18em] text-text-light">
-              Last updated: May 16, 2026
+              Last updated: June 11, 2026
             </p>
           </div>
 

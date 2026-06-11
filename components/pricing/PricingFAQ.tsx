@@ -17,6 +17,11 @@ const faqs = [
       "Starter includes 2 users and Professional includes 5 users. Additional seats are $19/mo each on both plans with no hard cap."
   },
   {
+    question: "How does SMS billing work?",
+    answer:
+      "Professional includes 500 SMS segments per month. Additional SMS usage is billed at $0.04 per segment on your next invoice."
+  },
+  {
     question: "Can you help migrate data from my current software?",
     answer:
       "Yes. The Data Migration Add-on is $199 one-time and includes customers, properties, service history, chemical product inventory, and technician records, delivered within 5 business days."

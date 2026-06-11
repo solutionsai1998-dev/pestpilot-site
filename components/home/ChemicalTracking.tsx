@@ -54,8 +54,8 @@ export function ChemicalTracking() {
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Button href="/features/chemical-tracking">Learn More</Button>
-              <Button href="/pricing" variant="secondary">
-                Start Free Trial
+              <Button href="/demo" variant="secondary">
+                Book a Demo
               </Button>
             </div>
           </div>

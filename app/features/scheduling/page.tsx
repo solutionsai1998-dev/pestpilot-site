@@ -167,7 +167,7 @@ export default function SchedulingPage() {
               seasonal timing, and the scheduling pressure that comes with route density in pest control.
             </p>
             <div className="mt-8">
-              <Button href="/pricing">Start Free Trial</Button>
+              <Button href="/demo">Book a Demo</Button>
             </div>
           </div>
         </div>

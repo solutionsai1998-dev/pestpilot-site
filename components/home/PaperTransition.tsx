@@ -51,8 +51,8 @@ export function PaperTransition() {
               </div>
 
               <div className="mt-8">
-                <Button href="/pricing">
-                  Start Free Trial — we&apos;ll help you move
+                <Button href="/demo">
+                  Book a Demo — we&apos;ll help you move
                 </Button>
               </div>
             </div>

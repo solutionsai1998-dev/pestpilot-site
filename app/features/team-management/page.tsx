@@ -188,7 +188,7 @@ export default function TeamManagementPage() {
             Start with routes, permissions, and check-ins that keep the field and office aligned.
           </p>
           <div className="mt-8">
-            <Button href="/pricing">Start Free Trial</Button>
+            <Button href="/demo">Book a Demo</Button>
           </div>
         </div>
       </section>

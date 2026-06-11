@@ -155,7 +155,7 @@ export default function BlogPostPage() {
               See how PestPilot handles this
             </h2>
             <div className="mt-8">
-              <Button href="/pricing">Start Free Trial</Button>
+              <Button href="/demo">Book a Demo</Button>
             </div>
           </div>
         </div>

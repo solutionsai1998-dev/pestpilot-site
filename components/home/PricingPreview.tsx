@@ -23,7 +23,7 @@ export function PricingPreview() {
 
           <Link
             className="inline-flex items-center gap-2 text-base font-semibold text-primary transition hover:text-primary-light"
-            href="/pricing"
+            href="/demo"
           >
             Compare all features
             <ArrowRight className="h-4 w-4" />
@@ -68,8 +68,8 @@ export function PricingPreview() {
               </div>
 
               <div className="mt-8">
-                <Button className="w-full justify-center" href="/pricing" variant={tier.highlighted ? "primary" : "secondary"}>
-                  Start Free Trial
+                <Button className="w-full justify-center" href="/demo" variant={tier.highlighted ? "primary" : "secondary"}>
+                  Book a Demo
                 </Button>
               </div>
             </div>

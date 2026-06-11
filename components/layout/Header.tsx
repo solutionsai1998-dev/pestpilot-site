@@ -13,7 +13,7 @@ export function Header() {
         </Link>
         <div className="hidden items-center gap-8 md:flex">
           <Nav />
-          <Button href="/pricing">Start Free Trial</Button>
+          <Button href="/demo">Book a Demo</Button>
         </div>
         <MobileMenu />
       </div>

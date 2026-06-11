@@ -168,7 +168,7 @@ export default function ReportingPage() {
               Unlike generic field service tools, PestPilot reports on the metrics pest control operators actually manage by, from recurring revenue health to chemical usage and callback pressure.
             </p>
             <div className="mt-8">
-              <Button href="/pricing">Start Free Trial</Button>
+              <Button href="/demo">Book a Demo</Button>
             </div>
           </div>
         </div>

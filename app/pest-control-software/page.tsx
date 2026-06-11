@@ -191,8 +191,8 @@ export default function PestControlSoftwarePage() {
               Ready to try pest control software that actually gets your business?
             </h2>
             <div className="mt-8 flex justify-center">
-              <Button href="/pricing">
-                Start Free Trial
+              <Button href="/demo">
+                Book a Demo
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>

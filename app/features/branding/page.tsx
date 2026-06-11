@@ -187,7 +187,7 @@ export default function BrandingPage() {
             Start with a branded portal, polished documents, and customer communication that builds trust.
           </p>
           <div className="mt-8">
-            <Button href="/pricing">Start Free Trial</Button>
+            <Button href="/demo">Book a Demo</Button>
           </div>
         </div>
       </section>

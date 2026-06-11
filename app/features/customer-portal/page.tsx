@@ -195,7 +195,7 @@ export default function CustomerPortalPage() {
             Start with a portal that reduces calls, speeds up payments, and keeps appointments moving.
           </p>
           <div className="mt-8">
-            <Button href="/pricing">Start Free Trial</Button>
+            <Button href="/demo">Book a Demo</Button>
           </div>
         </div>
       </section>
