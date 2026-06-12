@@ -22,6 +22,11 @@ const faqs = [
       "Professional includes 500 SMS segments per month. Additional SMS usage is billed at $0.04 per segment on your next invoice."
   },
   {
+    question: "What does it cost to accept online invoice payments?",
+    answer:
+      "Online invoice payments are processed through Stripe Connect. A 2.9% + $0.30 processing fee per successful card transaction is deducted from each payment before it's paid out to you. Processing fees aren't returned on refunds."
+  },
+  {
     question: "Can you help migrate data from my current software?",
     answer:
       "Yes. The Data Migration Add-on is $199 one-time and includes customers, properties, service history, chemical product inventory, and technician records, delivered within 5 business days."
